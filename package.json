@@ -1,0 +1,13 @@
+{
+  "name": "restsheet-interpolate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Shiven Sinha <shivensinha4@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0",
+    "uglify-es": "^3.3.9"
+  }
+}
