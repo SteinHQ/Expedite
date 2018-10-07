@@ -20,19 +20,19 @@
 </head>
 <body>
 <h1>Sheet 1</h1>
-<div data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet1/" data-restsheet-limit="5"
-     data-restsheet-offset="1">
+<div data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet1/" data-restsheet-limit="1"
+     data-restsheet-offset="1" data-restsheet-search='{"score": "72"}'>
     <h2>{{name}}</h2>
     <em>ID</em>: {{id}}
     <br>
-    <em>Score</em>: {{{{score}}}}
+    <em>Score</em>: {{score}}
 </div>
 <hr>
 <h1>Sheet 2</h1>
 <div data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet2/">
     <h2>{{foo}}</h2>
-    <em>Another Column</em>: {{{{another column}}}}
+    <em>Another Column</em>: {{another column}}
 </div>
-<script src="../dist/index.js"></script>
+<script src="../index.js"></script>
 </body>
 </html>

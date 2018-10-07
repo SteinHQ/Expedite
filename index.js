@@ -37,6 +37,9 @@ function fetchData({URL, search, limit, offset}) {
   if (offset) {
     URLGetParameters.push(`offset=${offset}`);
   }
+  if (search) {
+    URLGetParameters.push(`search=${search}`);
+  }
 
   const searchURLSegment = search ? 'search' : '';
   const queryURL = `${URL}${searchURLSegment}?${URLGetParameters.join('&')}`;
