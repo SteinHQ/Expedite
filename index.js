@@ -1,12 +1,21 @@
+// TODO: Add options for customization in form
+
 document.addEventListener('DOMContentLoaded', updateHTML);
 
 function updateHTML() {
   const applicableParents = document.querySelectorAll('[data-restsheet-url]');
   for (let i = 0, element; element = applicableParents[i]; i++) {
-    const URL = element.dataset.restsheetUrl,
-        search = element.dataset.restsheetSearch,
+    const search = element.dataset.restsheetSearch,
         limit = element.dataset.restsheetLimit,
         offset = element.dataset.restsheetOffset;
+
+    let URL = element.dataset.restsheetUrl;
+    URL = URL.endsWith('/') ? URL : URL + '/'; // Normalize URL to end with slash
+
+    // Just add appropriate event handler if the parent node is a form
+    if (element.tagName === 'FORM') {
+      return configureForm(element, URL);
+    }
 
     element.style.display = 'none';
 
@@ -20,6 +29,7 @@ function updateHTML() {
           const interpolatedUnits = contentUnits.map((contentUnit, index) => {
             return interpolateString(contentUnit, data[index]);
           });
+
           element.innerHTML = interpolatedUnits.join('');
           element.style.display = 'initial';
         })
@@ -28,7 +38,6 @@ function updateHTML() {
 }
 
 function fetchData({URL, search, limit, offset}) {
-  URL = URL.endsWith('/') ? URL : URL + '/'; // Normalize URL to end with slash
   let URLGetParameters = [];
 
   if (limit) {
@@ -57,4 +66,30 @@ function interpolateString(string, replacements) {
     const replacement = replacements[key];
     return (typeof replacement === 'string' || typeof replacement === 'number') ? replacement : fullCapture;
   });
+}
+
+function configureForm(form, URL) {
+  URL = `${URL}append`;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let formData = new FormData(form);
+
+    // Convert FormData into JSON
+    formData = Array.from(formData.entries()).reduce((memo, pair) => ({
+      ...memo,
+      [pair[0]]: pair[1],
+    }), {});
+
+    const requestData = {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+      },
+      body: JSON.stringify([formData]) // The API expects an array of rows
+    };
+
+    fetch(URL, requestData)
+        .then(res => console.log(res));
+  })
 }
