@@ -13,8 +13,20 @@
             margin-top: 0.5rem;
         }
 
-        hr{
+        hr {
             margin: 2rem 0;
+        }
+
+        .form__group {
+            margin: 1rem 0;
+        }
+
+        .form__label {
+            font-style: italic;
+        }
+
+        .form__label:after {
+            content: ': ';
         }
     </style>
 </head>
@@ -28,10 +40,21 @@
     <em>Score</em>: {{score}}
 </div>
 <hr>
-<form data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet1/">
-    <input type="number" name="id">
-    <input type="text" name="name">
-    <input type="text" name="score">
+<form data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet1/" id="test-form">
+    <div class="form__group">
+        <label for="field-id" class="form__label">ID</label>
+        <input type="number" name="id" id="field-id">
+    </div>
+
+    <div class="form__group">
+        <label for="field-name" class="form__label">Name</label>
+        <input type="text" name="name" id="field-name">
+    </div>
+
+    <div class="form__group">
+        <label for="field-score" class="form__label">Score</label>
+        <input type="text" name="score" id="field-score">
+    </div>
 
     <input type="submit">
 </form>

@@ -90,6 +90,11 @@ function configureForm(form, URL) {
     };
 
     fetch(URL, requestData)
-        .then(res => console.log(res));
+        .then(response => response.json())
+        .then(response => {
+          const submitEvent = new CustomEvent('updated', {detail: response});
+          e.target.dispatchEvent(submitEvent);
+        })
+        .catch(error => console.log(error));
   })
 }
