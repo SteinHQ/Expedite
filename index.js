@@ -29,7 +29,7 @@ function updateHTML() {
           });
 
           element.innerHTML = interpolatedUnits.join('');
-          element.style.display = 'initial';
+          element.style.display = '';
         })
         .catch(error => console.log(error))
   }
