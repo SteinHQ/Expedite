@@ -1,5 +1,3 @@
-// TODO: Add options for customization in form
-
 document.addEventListener('DOMContentLoaded', updateHTML);
 
 function updateHTML() {
