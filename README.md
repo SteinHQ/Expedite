@@ -94,7 +94,7 @@ Include the script for Interpolate before the closing `</body>` tag.
 ```
 
 #### What happens within the parent element
-For each row in the sheet, _the content inside the parent element is cloned and the appropriate values are interpolated for each row_.
+For each row in the sheet, _the content inside the parent element is cloned and the appropriate values are interpolated_.
 
 ### Search Data
 You can use the `data-restsheet-search` attribute to fetch and show only the results which match the given conditions.
