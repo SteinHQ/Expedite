@@ -1,4 +1,4 @@
-<!-- Change the URL in all samples -->
+<!-- Change the URL in all samples, use jsDelivr as CDN -->
 
 # RestSheet Interpolate
 
@@ -6,7 +6,7 @@ Display data from Google Sheets in your website, via handlebars-like `{{ }}` syn
 
 All straight through your simple, beloved HTML.
 
-## Examples
+## Usage Examples
 This section outlines the utility of Interpolate for RestSheet. The usage guide can be found in the table of contents.
 
 Say you have a Google sheet which includes a list of blog posts.
@@ -67,7 +67,54 @@ You can also directly search the sheet, and limit and offset the results. These 
 
 ##### Full examples can be found in the _examples_ folder.
 
+## Installation
+Include the script for Interpolate before the closing `</body>` tag.
+```html
+<script src="../index.js"></script>
+```
 
+## Documentation
+### Read data from Spreadsheet
+1. Set the `data-restsheet-url` attribute of the parent element.
+2. Add handlebars `{{ }}` with the column name in any of the child elements.
 
+```html
+<div data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1">
+    <div>
+        <h1>{{title}}</h1>
+        <h6>By {{author}}</h6>
+        <p>
+            {{content}}
+        </p>
+        <p>
+            Read on <a href="{{link}}">Medium</a>
+        </p>
+    </div>
+</div>
+```
+
+#### What happens within the parent element
+For each row in the sheet, the _content inside the parent element is cloned_ and the appropriate values are interpolated for each row.
+
+### Search data
+You can use the `data-restsheet-search` attribute to fetch and show only the results which match the given conditions.
+
+Set the `data-restsheet-search` attribute of the parent to include the conditions in the form of [valid JSON](http://json.org/example.html). Remember to set the attribute within single quotes (`' '`), because JSON keys and string values are set in double quotes (`" "`).
+
+```html
+<!-- Filter by author -->
+<div data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1" data-restsheet-search='{"author": "Zat Rana"}'>
+    <div>
+        <h1>{{title}}</h1>
+        <h6>By {{author}}</h6>
+        <p>
+            {{content}}
+        </p>
+        <p>
+            Read on <a href="{{link}}">Medium</a>
+        </p>
+    </div>
+</div>
+```
 
 <!-- Interpolate for RestSheet helps add RestSheet super-powers to your website, without the need to play with programming languages and the RestSheet API. -->
