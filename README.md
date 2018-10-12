@@ -59,7 +59,7 @@ Simply set the `data-restsheet-url` attribute of the form. Here's an example of 
 ```
 And there it is again. The submissions will be added to the Google Sheet.
 
-![Add Post Demo Screenshot](assets/demo-form-screenshot.png?raw=true)
+![Add Post Demo GIF](assets/demo-form.gif)
 
 ### Search, Limit, and Offset
 You can also directly search the sheet, and limit and offset the results. These can be set via the `data-restsheet-search`, `data-restsheet-limit`, and `data-restsheet-offset` attributes respectively.
@@ -154,7 +154,15 @@ Additionally, you can set the `data-restsheet-limit` and `data-restsheet-offset`
 ```
 **Note: To use value interpolations within forms, create a parent element of the form. The `data-restsheet-url` attribute of forms will not trigger interpolations.**
 
-#### Event on Submit
-When the form is submitted and the API response is received, the event
+#### Event on Receiving Response
+When the form is submitted and the API response is received, the event _ResponseReceived_ is dispatched on the respective form. The event object has the `detail` property set as 
+```json5
+{
+  status: <INTEGER>,
+  body: ...
+}
+```
+
+You can show success/error messages on respective status codes, or take any other action desired.
 
 <!-- Interpolate for RestSheet helps add RestSheet super-powers to your website, without the need to play with programming languages and the RestSheet API. -->

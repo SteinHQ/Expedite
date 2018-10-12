@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1" class="container my-5">
-    <div class="form-group">
-        <label for="title-input">Title</label>
-        <input id="title-input" name="title" class="form-control form-control-lg">
-      </div>
-    <div class="form-group">
-        <label for="author-input">Author</label>
-        <input type="text" id="author-input" name="author" class="form-control">
+<div class="container my-5">
+    <form data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1" class="my-3" id="sheet-form">
+        <div class="form-group">
+            <label for="title-input">Title</label>
+            <input id="title-input" name="title" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+            <label for="author-input">Author</label>
+            <input type="text" id="author-input" name="author" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="link-input">Medium Link</label>
+            <input type="url" id="link-input" name="link" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="content-textarea">Content</label>
+            <textarea name="content" id="content-textarea" rows="5" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+    <div class="alert alert-success invisible" role="alert" id="completed-alert">
+        Row Appended!
     </div>
-    <div class="form-group">
-        <label for="link-input">Medium Link</label>
-        <input type="url" id="link-input" name="link" class="form-control">
-    </div>
-    <div class="form-group">
-        <label for="content-textarea">Content</label>
-        <textarea name="content" id="content-textarea" rows="5" class="form-control"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-<!-- <form data-restsheet-url="http://localhost/storage/5bb7b937a7504a2610040b64/Sheet1/">
-    <div class="form__group">
-        <label for="field-id" class="form__label">ID</label>
-        <input type="number" name="id" id="field-id">
-    </div>
-
-    <div class="form__group">
-        <label for="field-name" class="form__label">Name</label>
-        <input type="text" name="name" id="field-name">
-    </div>
-
-    <div class="form__group">
-        <label for="field-score" class="form__label">Score</label>
-        <input type="text" name="score" id="field-score">
-    </div>
-
-    <input type="submit">
-</form> -->
+</div>
 <script src="../index.js"></script>
+<script>
+  const submitButton = document.getElementById("submit"),
+      requestCompletedAlert = document.getElementById("completed-alert"),
+      form = document.getElementById('sheet-form');
+
+  form.addEventListener('submit', () => {
+    submitButton.disabled = true;
+    requestCompletedAlert.classList.add('invisible');
+  });
+
+  form.addEventListener('ResponseReceived', (event) => {
+    if (event.detail.status === 200) {
+      requestCompletedAlert.classList.remove('invisible');
+    }
+    submitButton.disabled = false;
+  })
+</script>
 </body>
 </html>

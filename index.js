@@ -69,30 +69,35 @@ function interpolateString(string, replacements) {
 function configureForm(form, URL) {
   URL = `${URL}append`;
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let formData = new FormData(form);
+        e.preventDefault();
+        let formData = new FormData(form);
 
-    // Convert FormData into JSON
-    formData = Array.from(formData.entries()).reduce((memo, pair) => ({
-      ...memo,
-      [pair[0]]: pair[1],
-    }), {});
+        // Convert FormData into JSON
+        formData = Array.from(formData.entries()).reduce((memo, pair) => ({
+          ...memo,
+          [pair[0]]: pair[1],
+        }), {});
 
-    const requestData = {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify([formData]) // The API expects an array of rows
-    };
+        const requestData = {
+          method: 'POST',
+          mode: 'cors',
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+          },
+          body: JSON.stringify([formData]) // The API expects an array of rows
+        };
 
-    fetch(URL, requestData)
-        .then(response => response.json())
-        .then(response => {
-          const submitEvent = new CustomEvent('updated', {detail: response});
-          e.target.dispatchEvent(submitEvent);
-        })
-        .catch(error => console.log(error));
-  })
+        fetch(URL, requestData)
+            .then(response => new Promise((resolve) => response.json().then(body => resolve({
+              status: response.status,
+              body
+            }))))
+            .then(response => {
+              const submitEvent = new CustomEvent('ResponseReceived', {detail: response});
+              e.target.dispatchEvent(submitEvent);
+            })
+            .catch(error => console.log(error));
+      }
+  )
 }
+

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,14 +22,15 @@
     <session id="2075016140">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,37 +38,40 @@
           <entry key="LICENSE" value="1" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="4" />
-          <entry key="js" value="11" />
-          <entry key="md" value="2" />
+          <entry key="html" value="5" />
+          <entry key="js" value="12" />
+          <entry key="md" value="3" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="5" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="12" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="351" />
-          <entry key="html" value="1724" />
-          <entry key="js" value="3762" />
-          <entry key="md" value="942" />
-          <entry key="txt" value="189" />
+          <entry key="html" value="2006" />
+          <entry key="js" value="4026" />
+          <entry key="md" value="1296" />
+          <entry key="txt" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="351" />
-          <entry key="HTML" value="1724" />
-          <entry key="JavaScript" value="3762" />
-          <entry key="Markdown" value="724" />
-          <entry key="PLAIN_TEXT" value="407" />
+          <entry key="HTML" value="2006" />
+          <entry key="JSON" value="1" />
+          <entry key="JSON5" value="2" />
+          <entry key="JavaScript" value="4027" />
+          <entry key="Markdown" value="1074" />
+          <entry key="PLAIN_TEXT" value="554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -87,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="371">
-                <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+              <first_editor relative-caret-position="300">
+                <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -98,17 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="407">
+              <caret line="95" column="67" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -131,11 +125,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/LICENSE" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/example/index.css" />
-        <option value="$PROJECT_DIR$/example/form.html" />
         <option value="$PROJECT_DIR$/example/index.html" />
         <option value="$PROJECT_DIR$/example/blog.html" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/example/form.html" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -289,7 +283,8 @@
       <workItem from="1539100417159" duration="7291000" />
       <workItem from="1539185807088" duration="5477000" />
       <workItem from="1539274593801" duration="2133000" />
-      <workItem from="1539278307815" duration="6177000" />
+      <workItem from="1539278307815" duration="6446000" />
+      <workItem from="1539346048498" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -305,11 +300,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539192561502</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated README, updated example, changed the behaviour of updating the display property when data is received.">
+      <created>1539285116312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539285116312</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added screenshot.">
+      <created>1539285226863</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539285226863</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33590000" />
+    <option name="totallyTimeSpent" value="37763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,13 +333,13 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49798116" weight="0.12230672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49528936" visible="true" weight="0.12230672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24968314" />
-      <window_info id="Gulp" order="2" sideWeight="0.50201887" side_tool="true" weight="0.12230672" />
+      <window_info id="Gulp" order="2" sideWeight="0.5047106" side_tool="true" weight="0.12230672" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,7 +363,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added basic functionality for saving data to spreadsheet via forms" />
     <MESSAGE value="Added functionality to trigger custom 'update' event on successful save to spreadsheet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to trigger custom 'update' event on successful save to spreadsheet." />
+    <MESSAGE value="Updated README, updated example, changed the behaviour of updating the display property when data is received." />
+    <MESSAGE value="Added screenshot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added screenshot." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
@@ -385,45 +396,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/index.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/demo-blog-screenshot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="95" column="67" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="371">
-            <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
