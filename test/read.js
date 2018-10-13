@@ -1,4 +1,4 @@
-jasmine.getFixtures().fixturesPath = 'fixtures/';
+console.log(jasmine.getFixtures());
 
 describe('Read Sheets', function () {
   it('should hide the parent element initially', function () {

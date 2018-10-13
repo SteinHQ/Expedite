@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/fixtures/onlyParent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/read.js" afterDir="false" />
+    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Fixed error in README language.">
+      <change afterPath="$PROJECT_DIR$/TestRunner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/boot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine_favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/spec/PlayerSpec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/spec/SpecHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/src/Player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jasmine/src/Song.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/read.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,7 +31,8 @@
     <session id="2075016140">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -32,7 +40,7 @@
           <entry key="project.open.time.50" value="2" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,9 +48,9 @@
           <entry key="LICENSE" value="1" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="13" />
-          <entry key="js" value="19" />
-          <entry key="json" value="3" />
+          <entry key="html" value="14" />
+          <entry key="js" value="22" />
+          <entry key="json" value="7" />
           <entry key="md" value="3" />
           <entry key="png" value="1" />
         </counts>
@@ -50,10 +58,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="14" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="22" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -61,9 +69,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="351" />
-          <entry key="html" value="2058" />
-          <entry key="js" value="4989" />
-          <entry key="json" value="23" />
+          <entry key="html" value="2193" />
+          <entry key="js" value="5022" />
+          <entry key="json" value="46" />
           <entry key="md" value="1296" />
           <entry key="txt" value="411" />
         </counts>
@@ -71,10 +79,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="351" />
-          <entry key="HTML" value="2060" />
-          <entry key="JSON" value="24" />
+          <entry key="HTML" value="2195" />
+          <entry key="JSON" value="47" />
           <entry key="JSON5" value="2" />
-          <entry key="JavaScript" value="4988" />
+          <entry key="JavaScript" value="5021" />
           <entry key="Markdown" value="1074" />
           <entry key="PLAIN_TEXT" value="629" />
         </counts>
@@ -91,11 +99,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/read.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state>
+              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestRunner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -103,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/fixtures/onlyParent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="60">
               <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
@@ -132,12 +149,13 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/index.html" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/example/blog.html" />
         <option value="$PROJECT_DIR$/example/form.html" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/test/fixtures/OnlyParent.html" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/read.js" />
+        <option value="$PROJECT_DIR$/TestRunner.html" />
       </list>
     </option>
   </component>
@@ -200,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,19 +229,30 @@
             <path>
               <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
               <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
               <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,6 +266,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HOME-PC.HOME\Desktop\webdev\restsheet-interpolate\jasmine" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HOME-PC.HOME\Desktop\webdev\restsheet-interpolate\example" />
     </key>
@@ -296,7 +329,8 @@
       <workItem from="1539274593801" duration="2133000" />
       <workItem from="1539278307815" duration="6446000" />
       <workItem from="1539346048498" duration="4747000" />
-      <workItem from="1539368807509" duration="7661000" />
+      <workItem from="1539368807509" duration="7688000" />
+      <workItem from="1539420024488" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -344,7 +378,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46267000" />
+    <option name="totallyTimeSpent" value="50024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +393,7 @@
     <frame x="793" y="0" width="814" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49391305" visible="true" weight="0.24871135" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49391305" weight="0.24871135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24968314" />
       <window_info id="Gulp" order="2" sideWeight="0.50608695" side_tool="true" weight="0.24871135" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -372,7 +406,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49873257" visible="true" weight="0.21662125" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49873257" visible="true" weight="0.21662125" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50126743" side_tool="true" weight="0.2166891" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32974428" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -472,16 +506,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mocha/mocha.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mocha/mocha.js" />
+    <entry file="file://$PROJECT_DIR$/test/index.html" />
     <entry file="file://$PROJECT_DIR$/example/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -496,13 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -513,17 +532,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/boot.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasmine/spec/PlayerSpec.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jasmine-jquery/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/read.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/onlyParent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="60">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/read.js">
+    <entry file="file://$PROJECT_DIR$/TestRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
         </state>
       </provider>
     </entry>
