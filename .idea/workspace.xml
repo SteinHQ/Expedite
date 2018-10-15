@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Fixed error in README language.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/read.js" afterDir="false" />
-    </list>
+    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -89,13 +84,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="51" />
-          <entry key="js" value="795" />
+          <entry key="js" value="796" />
+          <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="51" />
-          <entry key="JavaScript" value="795" />
+          <entry key="JavaScript" value="796" />
+          <entry key="PLAIN_TEXT" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -123,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/read.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="472">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -341,7 +338,7 @@
       <workItem from="1539346048498" duration="4747000" />
       <workItem from="1539368807509" duration="7688000" />
       <workItem from="1539420024488" duration="3730000" />
-      <workItem from="1539626401956" duration="4535000" />
+      <workItem from="1539626401956" duration="5216000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -385,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539352575742</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Setup mechanism for testing.">
+      <created>1539631423924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539631423924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54559000" />
+    <option name="totallyTimeSpent" value="55240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -404,7 +408,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49391305" weight="0.24851191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49391305" visible="true" weight="0.24851191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24968314" />
       <window_info id="Gulp" order="2" sideWeight="0.50608695" side_tool="true" weight="0.24871135" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -460,7 +464,8 @@
     <MESSAGE value="Added demo GIF, updated docs." />
     <MESSAGE value="Fixed error." />
     <MESSAGE value="Fixed error in README language." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed error in README language." />
+    <MESSAGE value="Setup mechanism for testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup mechanism for testing." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
@@ -556,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/read.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="472">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>

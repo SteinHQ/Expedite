@@ -16,6 +16,7 @@ describe('Read Sheets', function () {
 
   it('should hide the parent element initially', function (done) {
     getFixture('onlyParent.html').then(html => {
+      spyOn(window, fetch).and.callFake(() => console.log(arguments))
       this.workspaceDiv.innerHTML = html;
       updateHTML();
 
@@ -29,6 +30,7 @@ describe('Read Sheets', function () {
   });
 
   it('should perform request to correct URL', function () {
+
   });
 
   describe('should perform request to correct URL with options', function () {
