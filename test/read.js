@@ -16,21 +16,27 @@ describe('Read Sheets', function () {
 
   it('should hide the parent element initially', function (done) {
     getFixture('onlyParent.html').then(html => {
-      spyOn(window, fetch).and.callFake(() => console.log(arguments))
       this.workspaceDiv.innerHTML = html;
       updateHTML();
 
       expect(document.getElementById('parentElement').style.display).toBe('none');
       done();
     });
-
   });
 
   it('should make the parent element visible on receiving data', function () {
   });
 
-  it('should perform request to correct URL', function () {
+  it('should perform request to correct URL without options', function (done) {
+    getFixture('onlyParent.html').then(html => {
+      spyOn(window, 'fetch').and.callThrough();
+      this.workspaceDiv.innerHTML = html;
+      updateHTML();
 
+      // Normalize URLs to compare them directly
+      expect(normalizeURL(window.fetch.calls.mostRecent().args[0])).toEqual(normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1'));
+      done();
+    });
   });
 
   describe('should perform request to correct URL with options', function () {
