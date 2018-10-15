@@ -1,10 +1,28 @@
-console.log(jasmine.getFixtures());
+const fixturesPath = 'test/fixtures';
+
+function getFixture(fileName) {
+  return fetch(`${fixturesPath}/${fileName}`)
+      .then(response => response.text());
+}
 
 describe('Read Sheets', function () {
-  it('should hide the parent element initially', function () {
-    loadFixtures('onlyParent.html');
+  beforeEach(function () {
+    this.workspaceDiv = document.getElementById('workspace');
+  });
 
-    expect(document.getElementById('parentElement').style.display).toBe('none');
+  afterEach(function () {
+    this.workspaceDiv.innerHTML = '';
+  });
+
+  it('should hide the parent element initially', function (done) {
+    getFixture('onlyParent.html').then(html => {
+      this.workspaceDiv.innerHTML = html;
+      updateHTML();
+
+      expect(document.getElementById('parentElement').style.display).toBe('none');
+      done();
+    });
+
   });
 
   it('should make the parent element visible on receiving data', function () {
