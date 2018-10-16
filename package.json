@@ -5,14 +5,18 @@
   "author": "Shiven Sinha <shivensinha4@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.1",
-    "jasmine": "^3.2.0",
+    "http-server": "^0.11.1",
     "jquery": "^3.3.1",
-    "pump": "^3.0.0",
-    "uglify-es": "^3.3.9"
+    "opn-cli": "^3.1.0",
+    "uglify-es": "^3.3.9",
+    "wait-on": "^3.1.0"
   },
   "scripts": {
-    "test": "jasmine test/read.js"
+    "launch-test": "wait-on http://localhost:8080 && opn http://localhost:8080/TestRunner.html",
+    "start-test-server": "http-server",
+    "test": "concurrently \"yarn start-test-server\" \"yarn launch-test\""
   }
 }
