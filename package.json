@@ -6,17 +6,19 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^4.0.1",
+    "fetch-mock": "^7.0.7",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.1",
     "http-server": "^0.11.1",
     "jquery": "^3.3.1",
+    "live-server": "^1.2.0",
     "opn-cli": "^3.1.0",
     "uglify-es": "^3.3.9",
     "wait-on": "^3.1.0"
   },
   "scripts": {
     "launch-test": "wait-on http://localhost:8080 && opn http://localhost:8080/TestRunner.html",
-    "start-test-server": "http-server",
+    "start-test-server": "live-server",
     "test": "concurrently \"yarn start-test-server\" \"yarn launch-test\""
   }
 }

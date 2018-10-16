@@ -48,7 +48,7 @@ function fetchData({URL, search, limit, offset}) {
     URLGetParameters.push(`search=${search}`);
   }
 
-  const searchURLSegment = search ? 'search' : '';
+  const searchURLSegment = search ? 'search/' : '';
   const queryURL = `${URL}${searchURLSegment}?${URLGetParameters.join('&')}`;
 
   return new Promise((resolve, reject) => {
