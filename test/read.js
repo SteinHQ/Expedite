@@ -3,7 +3,9 @@ const mockFetchResponse = fetch('test/mockData.json');
 
 function mockFetch() {
   // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
-  return mockFetchResponse.then();
+  return new Promise(resolve => {
+    mockFetchResponse.then(response => resolve(response.clone()))
+  });
 }
 
 describe('Read Sheets', function () {
@@ -17,6 +19,8 @@ describe('Read Sheets', function () {
   });
 
   beforeEach(function () {
+    spyOn(window, 'fetch').and.callFake(mockFetch);
+
     this.workspaceDiv = document.getElementById('workspace');
   });
 
@@ -39,8 +43,6 @@ describe('Read Sheets', function () {
       done();
     });
 
-    spyOn(window, 'fetch').and.callFake(mockFetch);
-
     this.workspaceDiv.innerHTML = this.fixture;
 
     // Activate the observer on parent element
@@ -54,8 +56,6 @@ describe('Read Sheets', function () {
 
   describe('should perform request to correct URL', function () {
     beforeEach(function () {
-      spyOn(window, 'fetch').and.callFake(mockFetch);
-
       this.workspaceDiv.innerHTML = this.fixture;
       this.parentElement = document.getElementById('parentElement');
     });
