@@ -10,18 +10,19 @@ function mockFetch() {
 
 describe('Read Sheets', function () {
   beforeAll(function (done) {
+    // Initialise DOM workspace
+    this.workspaceDiv = document.createElement('div');
+    this.workspaceDiv.id = 'workspace';
+    document.body.appendChild(this.workspaceDiv);
+
     fetch(fixturePath)
         .then(response => response.text())
         .then(html => {
           this.fixture = html;
           done();
         });
-  });
 
-  beforeEach(function () {
     spyOn(window, 'fetch').and.callFake(mockFetch);
-
-    this.workspaceDiv = document.getElementById('workspace');
   });
 
   afterEach(function () {
