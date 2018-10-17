@@ -1,5 +1,5 @@
-const fixturePath = 'test/fixtures/onlyParent.html';
-const mockFetchResponse = fetch('test/mockData.json');
+const fixturePath = 'tests/fixtures/read.html',
+    mockFetchResponse = fetch('tests/mockData.json');
 
 function mockFetch() {
   // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -34,24 +34,6 @@ describe('Read Sheets', function () {
 
     expect(document.getElementById('parentElement').style.display).toBe('none');
     done();
-  });
-
-  it('should make the parent element visible on receiving data', function (done) {
-    // Set up an observer for changes in the parent element that would be injected later
-    const mutationObserver = new MutationObserver(() => {
-      expect(document.getElementById('parentElement').style.display).toEqual('');
-      done();
-    });
-
-    this.workspaceDiv.innerHTML = this.fixture;
-
-    // Activate the observer on parent element
-    mutationObserver.observe(document.getElementById('parentElement'), {
-      childList: true,
-      subtree: true
-    });
-
-    updateHTML();
   });
 
   describe('should perform request to correct URL', function () {
@@ -168,5 +150,61 @@ describe('Read Sheets', function () {
       expect(requestedURL).toEqual(expectedURL);
       done();
     });
-  })
+  });
+
+  it('should make the parent element visible on receiving data', function (done) {
+    // Set up an observer for changes in the parent element that would be injected later
+    const mutationObserver = new MutationObserver(() => {
+      expect(document.getElementById('parentElement').style.display).toEqual('');
+      done();
+    });
+
+    this.workspaceDiv.innerHTML = this.fixture;
+
+    // Activate the observer on parent element
+    mutationObserver.observe(document.getElementById('parentElement'), {
+      childList: true,
+      subtree: true
+    });
+
+    updateHTML();
+  });
+
+  it('should interpolate correctly on receiving data', function (done) {
+    // Set up an observer for changes in the parent element that would be injected later
+    const mutationObserver = new MutationObserver(() => {
+      const titleElements = document.querySelectorAll('.title'),
+          authorElements = document.querySelectorAll('.author'),
+          contentElements = document.querySelectorAll('.content'),
+          linkElements = document.querySelectorAll('.link');
+
+      mockFetch()
+          .then(response => response.json())
+          .then(data => {
+            // Comparing an objected generated from reversing the interpolations to the mock data for each 'row'
+            data.forEach((currentRecord, index) => {
+              const interpolationResults = {
+                title: titleElements[index].innerHTML,
+                author: authorElements[index].innerHTML,
+                content: contentElements[index].innerHTML,
+                link: linkElements[index].href
+              };
+
+              expect(currentRecord).toEqual(interpolationResults);
+            });
+
+            done();
+          });
+    });
+
+    this.workspaceDiv.innerHTML = this.fixture;
+
+    // Activate the observer on parent element
+    mutationObserver.observe(document.getElementById('parentElement'), {
+      childList: true,
+      subtree: true
+    });
+
+    updateHTML();
+  });
 });
