@@ -1,6 +1,6 @@
 <!-- Change the URL in all samples, use jsDelivr as CDN, mention about XSS -->
 
-# RestSheet Interpolate [![Build Status](https://travis-ci.com/shivensinha4/RestSheet-Interpolate.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/RestSheet-Interpolate)
+# RestSheet Interpolate [![Build Status](https://travis-ci.com/shivensinha4/RestSheet-Interpolate.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/RestSheet-Interpolate)[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d632e2064f934c52a513d6d3304a55b0)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shivensinha4/RestSheet-Interpolate&amp;utm_campaign=Badge_Grade)
 
 Display data from Google Sheets in your website, via handlebars-like `{{ }}` syntax. Or, directly link a form to a Google Sheet.
 
