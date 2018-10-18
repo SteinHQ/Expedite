@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for restsheet-interpolate\tests\utils\normalizeURL.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">restsheet-interpolate/tests/utils/</a> normalizeURL.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.86% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>38/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/62</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.27% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>37/55</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">24×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">24×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const URLParser = typeof URL === 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered" >require('url').URL </span>: URL;
+&nbsp;
+const testParameter = (name, filters) =&gt; {
+  return filters.some(filter =&gt; filter instanceof RegExp ? filter.test(name) : <span class="branch-1 cbranch-no" title="branch not covered" >filter === name)</span>;
+};
+&nbsp;
+function normalizeURL(urlString, opts) {
+  opts = Object.assign({
+    defaultProtocol: 'http:',
+    normalizeProtocol: true,
+    forceHttp: false,
+    forceHttps: false,
+    stripHash: true,
+    stripWWW: true,
+    removeQueryParameters: [/^utm_\w+/i],
+    removeTrailingSlash: true,
+    removeDirectoryIndex: false,
+    sortQueryParameters: true
+  }, opts);
+&nbsp;
+  // Backwards compatibility
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (Reflect.has(opts, 'normalizeHttps')) {
+<span class="cstat-no" title="statement not covered" >    opts.forceHttp = opts.normalizeHttps;</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (Reflect.has(opts, 'normalizeHttp')) {
+<span class="cstat-no" title="statement not covered" >    opts.forceHttps = opts.normalizeHttp;</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (Reflect.has(opts, 'stripFragment')) {
+<span class="cstat-no" title="statement not covered" >    opts.stripHash = opts.stripFragment;</span>
+  }
+&nbsp;
+  urlString = urlString.trim();
+&nbsp;
+  const hasRelativeProtocol = urlString.startsWith('//');
+  const isRelativeUrl = !hasRelativeProtocol &amp;&amp; /^\.*\//.test(urlString);
+&nbsp;
+  // Prepend protocol
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (!isRelativeUrl) {
+    urlString = urlString.replace(/^(?!(?:\w+:)?\/\/)|^\/\//, opts.defaultProtocol);
+  }
+&nbsp;
+  const urlObj = new URLParser(urlString);
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (opts.forceHttp &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >opts.forceHttps)</span> {
+<span class="cstat-no" title="statement not covered" >    throw new Error('The `forceHttp` and `forceHttps` options cannot be used together');</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (opts.forceHttp &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >urlObj.protocol === 'https:')</span> {
+<span class="cstat-no" title="statement not covered" >    urlObj.protocol = 'http:';</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (opts.forceHttps &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >urlObj.protocol === 'http:')</span> {
+<span class="cstat-no" title="statement not covered" >    urlObj.protocol = 'https:';</span>
+  }
+&nbsp;
+  // Remove hash
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (opts.stripHash) {
+    urlObj.hash = '';
+  }
+&nbsp;
+  // Remove duplicate slashes if not preceded by a protocol
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (urlObj.pathname) {
+    // TODO: Use the following instead when targeting Node.js 10
+    // `urlObj.pathname = urlObj.pathname.replace(/(?&lt;!https?:)\/{2,}/g, '/');`
+    urlObj.pathname = urlObj.pathname.replace(/((?![https?:]).)\/{2,}/g, (_, p1) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      if (/^(?!\/)/g.test(p1)) {</span>
+<span class="cstat-no" title="statement not covered" >        return `${p1}/`;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      return '/';</span>
+    });
+  }
+&nbsp;
+  // Decode URI octets
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (urlObj.pathname) {
+    urlObj.pathname = decodeURI(urlObj.pathname);
+  }
+&nbsp;
+  // Remove directory index
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (opts.removeDirectoryIndex === true) {
+<span class="cstat-no" title="statement not covered" >    opts.removeDirectoryIndex = [/^index\.[a-z]+$/];</span>
+  }
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (Array.isArray(opts.removeDirectoryIndex) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >opts.removeDirectoryIndex.length &gt; 0)</span> {
+    let pathComponents = <span class="cstat-no" title="statement not covered" >urlObj.pathname.split('/');</span>
+    const lastComponent = <span class="cstat-no" title="statement not covered" >pathComponents[pathComponents.length - 1];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (testParameter(lastComponent, opts.removeDirectoryIndex)) {</span>
+<span class="cstat-no" title="statement not covered" >      pathComponents = pathComponents.slice(0, pathComponents.length - 1);</span>
+<span class="cstat-no" title="statement not covered" >      urlObj.pathname = pathComponents.slice(1).join('/') + '/';</span>
+    }
+  }
+&nbsp;
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (urlObj.hostname) {
+    // Remove trailing dot
+    urlObj.hostname = urlObj.hostname.replace(/\.$/, '');
+&nbsp;
+    // Remove `www.`
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (opts.stripWWW &amp;&amp; /^www\.([a-z\-\d]{2,63})\.([a-z.]{2,5})$/.test(urlObj.hostname)) {
+      // Each label should be max 63 at length (min: 2).
+      // The extension should be max 5 at length (min: 2).
+      // Source: https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names
+<span class="cstat-no" title="statement not covered" >      urlObj.hostname = urlObj.hostname.replace(/^www\./, '');</span>
+    }
+  }
+&nbsp;
+  // Remove query unwanted parameters
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (Array.isArray(opts.removeQueryParameters)) {
+    for (const key of [...urlObj.searchParams.keys()]) {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (testParameter(key, opts.removeQueryParameters)) {
+<span class="cstat-no" title="statement not covered" >        urlObj.searchParams.delete(key);</span>
+      }
+    }
+  }
+&nbsp;
+  // Sort query parameters
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (opts.sortQueryParameters) {
+    urlObj.searchParams.sort();
+  }
+&nbsp;
+  // Take advantage of many of the Node `url` normalizations
+  urlString = urlObj.toString();
+&nbsp;
+  // Remove ending `/`
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (opts.removeTrailingSlash || <span class="branch-1 cbranch-no" title="branch not covered" >urlObj.pathname === '/')</span> {
+    urlString = urlString.replace(/\/$/, '');
+  }
+&nbsp;
+  // Restore relative protocol, if applicable
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (hasRelativeProtocol &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!opts.normalizeProtocol)</span> {
+<span class="cstat-no" title="statement not covered" >    urlString = urlString.replace(/^http:\/\//, '//');</span>
+  }
+&nbsp;
+  return urlString;
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 19 2018 01:25:35 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
