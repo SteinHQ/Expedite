@@ -6,7 +6,7 @@ module.exports = function (config) {
       'tests/**/*.js',
       'tests/**/*.json',
       'tests/**/*.html',
-      './index.js'
+      'index.js'
     ],
     proxies: {
       "/tests/": "/base/tests/"
@@ -16,7 +16,7 @@ module.exports = function (config) {
     ],
     preprocessors: {
       'tests/**/*.js': ['babel'],
-      './index.js': ['babel']
+      'index.js': ['babel']
     },
     reporters: ['progress', 'coverage'],
     port: 9876,
