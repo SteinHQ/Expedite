@@ -1,6 +1,6 @@
 <!-- Change the URL in all samples, use jsDelivr as CDN -->
 
-# RestSheet Interpolate
+# RestSheet Interpolate [![Build Status](https://travis-ci.com/shivensinha4/RestSheet-Interpolate.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/RestSheet-Interpolate)
 
 Display data from Google Sheets in your website, via handlebars-like `{{ }}` syntax. Or, directly link a form to a Google Sheet.
 
