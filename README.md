@@ -74,8 +74,8 @@ Include the script for Interpolate before the closing `</body>` tag.
 
 ## Documentation
 ### Read Data from Spreadsheet
- 1. Set the `data-restsheet-url` attribute of the parent element.
- 2. Add handlebars `{{ }}` with the column name in any of the child elements.
+1. Set the `data-restsheet-url` attribute of the parent element.
+2. Add handlebars `{{ }}` with the column name in any of the child elements.
 
 ```html
 <div data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1">
@@ -126,8 +126,8 @@ Additionally, you can set the `data-restsheet-limit` and `data-restsheet-offset`
 ```
 
 ### Save Data to Spreadsheet
- 1. Set the `data-restsheet-url` attribute of the form.
- 2. Set the `name` attribute of the input fields to the applicable column name.
+1. Set the `data-restsheet-url` attribute of the form.
+2. Set the `name` attribute of the input fields to the applicable column name.
 
 ```html
 <form data-restsheet-url="...">

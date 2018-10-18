@@ -52,7 +52,7 @@ function fetchData({URL, search, limit, offset}) {
     fetch(queryURL)
         .then((response) => response.json())
         .then((response) => resolve(response))
-        .catch((error) => reject(error))
+        .catch((error) => reject(error));
   });
 }
 
