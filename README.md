@@ -1,4 +1,4 @@
-<!-- Change the URL in all samples, use jsDelivr as CDN -->
+<!-- Change the URL in all samples, use jsDelivr as CDN, mention about XSS -->
 
 # RestSheet Interpolate [![Build Status](https://travis-ci.com/shivensinha4/RestSheet-Interpolate.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/RestSheet-Interpolate)
 

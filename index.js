@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', updateHTML);
 
 function updateHTML() {
   const applicableParents = document.querySelectorAll('[data-restsheet-url]');
-  for (let i = 0, element; element = applicableParents[i]; i++) {
+  for (let i = 0, element; (element = applicableParents[i]); i++) {
     const search = element.dataset.restsheetSearch,
         limit = element.dataset.restsheetLimit,
         offset = element.dataset.restsheetOffset;
@@ -18,7 +18,7 @@ function updateHTML() {
     element.style.display = 'none';
 
     fetchData({URL, search, limit, offset})
-        .then(data => {
+        .then((data) => {
           // Get innerHTML, interpolate it for each row in spreadsheet
           const contentUnits = [];
           for (let i = 0; i < data.length; i++) {
@@ -28,25 +28,22 @@ function updateHTML() {
             return interpolateString(contentUnit, data[index]);
           });
 
+          // Update the DOM
           element.innerHTML = interpolatedUnits.join('');
           element.style.display = '';
         })
-        .catch(error => console.log(error))
+        .catch(error => {
+          throw error;
+        })
   }
 }
 
 function fetchData({URL, search, limit, offset}) {
-  let URLGetParameters = [];
-
-  if (limit) {
-    URLGetParameters.push(`limit=${limit}`);
-  }
-  if (offset) {
-    URLGetParameters.push(`offset=${offset}`);
-  }
-  if (search) {
-    URLGetParameters.push(`search=${search}`);
-  }
+  let URLGetParameters = [
+    limit ? `limit=${limit}` : '',
+    offset ? `offset=${offset}` : '',
+    search ? `search=${search}` : ''
+  ];
 
   const searchURLSegment = search ? 'search/' : '';
   const queryURL = `${URL}${searchURLSegment}?${URLGetParameters.join('&')}`;
@@ -88,16 +85,17 @@ function configureForm(form, URL) {
         };
 
         fetch(URL, requestData)
-            .then(response => new Promise((resolve) => response.json().then(body => resolve({
+            .then((response) => new Promise((resolve) => response.json().then(body => resolve({
               status: response.status,
               body
             }))))
-            .then(response => {
+            .then((response) => {
               const submitEvent = new CustomEvent('ResponseReceived', {detail: response});
               e.target.dispatchEvent(submitEvent);
             })
-            .catch(error => console.log(error));
+            .catch((error) => {
+              throw error;
+            });
       }
   )
 }
-
