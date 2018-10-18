@@ -64,7 +64,7 @@ And there it is again. The submissions will be added to the Google Sheet.
 ### Search, Limit, and Offset
 You can also directly search the sheet, and limit and offset the results. These can be set via the `data-restsheet-search`, `data-restsheet-limit`, and `data-restsheet-offset` attributes respectively.
 
-##### Full examples can be found in the _examples_ folder.
+##### Full examples can be found in the _examples_ folder
 
 ## Installation
 Include the script for Interpolate before the closing `</body>` tag.
