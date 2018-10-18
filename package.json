@@ -26,6 +26,6 @@
     "launch-test": "wait-on http://localhost:8080 && opn http://localhost:8080/SpecRunner.html",
     "start-test-server": "live-server",
     "test-browser": "concurrently \"yarn start-test-server\" \"yarn launch-test\"",
-    "test": "karma start tests/karma.conf.js --single-run"
+    "test": "karma start karma.conf.js"
   }
 }
