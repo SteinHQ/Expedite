@@ -32,9 +32,9 @@ function updateHTML() {
           element.innerHTML = interpolatedUnits.join('');
           element.style.display = '';
         })
-        .catch(error => {
+        .catch((error) => {
           throw error;
-        })
+        });
   }
 }
 
@@ -51,8 +51,8 @@ function fetchData({URL, search, limit, offset}) {
   return new Promise((resolve, reject) => {
     fetch(queryURL)
         .then((response) => response.json())
-        .then(response => resolve(response))
-        .catch(error => reject(error))
+        .then((response) => resolve(response))
+        .catch((error) => reject(error))
   });
 }
 
@@ -79,13 +79,13 @@ function configureForm(form, URL) {
           method: 'POST',
           mode: 'cors',
           headers: {
-            "Content-Type": "application/json; charset=utf-8",
+            'Content-Type': 'application/json; charset=utf-8',
           },
           body: JSON.stringify([formData]) // The API expects an array of rows
         };
 
         fetch(URL, requestData)
-            .then((response) => new Promise((resolve) => response.json().then(body => resolve({
+            .then((response) => new Promise((resolve) => response.json().then((body) => resolve({
               status: response.status,
               body
             }))))
@@ -97,5 +97,5 @@ function configureForm(form, URL) {
               throw error;
             });
       }
-  )
+  );
 }

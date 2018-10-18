@@ -64,7 +64,6 @@ And there it is again. The submissions will be added to the Google Sheet.
 ### Search, Limit, and Offset
 You can also directly search the sheet, and limit and offset the results. These can be set via the `data-restsheet-search`, `data-restsheet-limit`, and `data-restsheet-offset` attributes respectively.
 
-
 ##### Full examples can be found in the _examples_ folder.
 
 ## Installation
@@ -75,8 +74,8 @@ Include the script for Interpolate before the closing `</body>` tag.
 
 ## Documentation
 ### Read Data from Spreadsheet
-1. Set the `data-restsheet-url` attribute of the parent element.
-2. Add handlebars `{{ }}` with the column name in any of the child elements.
+ 1. Set the `data-restsheet-url` attribute of the parent element.
+ 2. Add handlebars `{{ }}` with the column name in any of the child elements.
 
 ```html
 <div data-restsheet-url="http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1">
@@ -117,7 +116,6 @@ Set the `data-restsheet-search` attribute of the parent to include the condition
 </div>
 ```
 
-
 ### Limit and Offset Results
 Additionally, you can set the `data-restsheet-limit` and `data-restsheet-offset` attributes of the parent (as integers) to limit and offset the results. These attributes can also be used in combination with the search conditions.
 
@@ -128,8 +126,8 @@ Additionally, you can set the `data-restsheet-limit` and `data-restsheet-offset`
 ```
 
 ### Save Data to Spreadsheet
-1. Set the `data-restsheet-url` attribute of the form.
-2. Set the `name` attribute of the input fields to the applicable column name.
+ 1. Set the `data-restsheet-url` attribute of the form.
+ 2. Set the `name` attribute of the input fields to the applicable column name.
 
 ```html
 <form data-restsheet-url="...">

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Updated configuration for Codacy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.codacy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.codacy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,11 +39,11 @@
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="15" />
-          <entry key="js" value="24" />
+          <entry key="js" value="25" />
           <entry key="json" value="7" />
-          <entry key="md" value="4" />
+          <entry key="md" value="6" />
           <entry key="png" value="1" />
-          <entry key="yml" value="2" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -53,21 +52,21 @@
           <entry key="HTML" value="15" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="24" />
-          <entry key="Markdown" value="2" />
+          <entry key="JavaScript" value="25" />
+          <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="2" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="351" />
           <entry key="html" value="2214" />
-          <entry key="js" value="5302" />
+          <entry key="js" value="5310" />
           <entry key="json" value="47" />
-          <entry key="md" value="1317" />
-          <entry key="txt" value="545" />
-          <entry key="yml" value="53" />
+          <entry key="md" value="1322" />
+          <entry key="txt" value="567" />
+          <entry key="yml" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -76,10 +75,10 @@
           <entry key="HTML" value="2216" />
           <entry key="JSON" value="48" />
           <entry key="JSON5" value="2" />
-          <entry key="JavaScript" value="5301" />
-          <entry key="Markdown" value="1095" />
-          <entry key="PLAIN_TEXT" value="763" />
-          <entry key="YAML" value="53" />
+          <entry key="JavaScript" value="5309" />
+          <entry key="Markdown" value="1100" />
+          <entry key="PLAIN_TEXT" value="785" />
+          <entry key="YAML" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -144,28 +143,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.codacy.yml">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="251">
+              <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+        <entry file="file://$PROJECT_DIR$/.codacy.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="80">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -188,6 +178,7 @@
       <find>after</find>
       <find>for</find>
       <find>for (</find>
+      <find>.then</find>
     </findStrings>
     <replaceStrings>
       <replace>fetchMockDataResponse()</replace>
@@ -223,10 +214,10 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
-        <option value="$PROJECT_DIR$/.codacy.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/example/blog.html" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/.codacy.yml" />
       </list>
     </option>
   </component>
@@ -403,7 +394,7 @@
       <workItem from="1539754020839" duration="12387000" />
       <workItem from="1539784117759" duration="6571000" />
       <workItem from="1539842761693" duration="2380000" />
-      <workItem from="1539852520417" duration="5236000" />
+      <workItem from="1539852520417" duration="6028000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -503,11 +494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539853122908</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Improved code quality">
+      <created>1539857979811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539857979811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104670000" />
+    <option name="totallyTimeSpent" value="105462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -522,9 +520,9 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49063033" visible="true" weight="0.14629513" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49061662" visible="true" weight="0.14629513" />
       <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" weight="0.24851191" />
-      <window_info id="Gulp" order="2" sideWeight="0.5093697" side_tool="true" weight="0.14629513" />
+      <window_info id="Gulp" order="2" sideWeight="0.5093834" side_tool="true" weight="0.14629513" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32663316" />
@@ -535,9 +533,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" visible="true" weight="0.21313673" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" weight="0.21313673" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.4036851" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32707775" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32707775" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -570,7 +568,8 @@
     <MESSAGE value="Added Karma with Chrome Headless testing and Travis CI configured" />
     <MESSAGE value="Added configuration for Codacy" />
     <MESSAGE value="Updated configuration for Codacy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated configuration for Codacy" />
+    <MESSAGE value="Improved code quality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved code quality" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -682,18 +681,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.codacy.yml">
+    <entry file="file://$PROJECT_DIR$/example/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="100">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="74" selection-start-column="74" selection-end-column="74" />
+          <first_editor relative-caret-position="520">
+            <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
@@ -704,17 +703,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/blog.html">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="251">
+          <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/.codacy.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="80">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
