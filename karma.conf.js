@@ -15,7 +15,6 @@ module.exports = function (config) {
       'karma.conf.js'
     ],
     preprocessors: {
-      'tests/**/*.js': ['babel'],
       'index.js': ['babel']
     },
     reporters: ['progress', 'coverage'],
@@ -25,6 +24,11 @@ module.exports = function (config) {
     autoWatch: false,
     browsers: ['ChromeHeadless'],
     singleRun: true,
-    concurrency: Infinity
-  })
+    concurrency: Infinity,
+    coverageReporter: {
+      reporters: [
+        {type: 'lcov', subdir: 'report-lcov'}
+      ]
+    }
+  });
 };
