@@ -33,7 +33,7 @@ function updateHTML() {
           element.style.display = '';
         })
         .catch((error) => {
-          throw error;
+          throw new Error(error);
         });
   }
 }
@@ -59,7 +59,7 @@ function fetchData({URL, search, limit, offset}) {
 function interpolateString(string, replacements) {
   return string.replace(/{{([^{}]*)}}/g, (fullCapture, key) => {
     const replacement = replacements[key];
-    return (typeof replacement === 'string' || typeof replacement === 'number') ? replacement : fullCapture;
+    return typeof replacement === 'string' ? replacement : fullCapture;
   });
 }
 
@@ -94,7 +94,7 @@ function configureForm(form, URL) {
               e.target.dispatchEvent(submitEvent);
             })
             .catch((error) => {
-              throw error;
+              throw new Error(error);
             });
       }
   );

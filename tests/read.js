@@ -1,5 +1,6 @@
 const fixturePath = 'tests/fixtures/read.html',
-    mockFetchResponse = fetch('tests/mockData.json');
+    mockFetchResponse = fetch('tests/mockData.json'),
+    mockIncorrectFetchResponse = fetch('nonexistent.json');
 
 function mockFetch() {
   // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -21,7 +22,10 @@ describe('Read Sheets', function () {
           this.fixture = html;
           done();
         });
+  });
 
+  beforeEach(function () {
+    // Added spy in beforeEach because the individual specs may alter the spy.
     spyOn(window, 'fetch').and.callFake(mockFetch);
   });
 
@@ -207,5 +211,29 @@ describe('Read Sheets', function () {
     });
 
     updateHTML();
+  });
+
+  it('should throw error on incorrect data received', function (done) {
+    let error = false;
+
+    this.workspaceDiv.innerHTML = this.fixture;
+    spyOn(window, 'fetchData').and.callThrough();
+
+    fetch.and.returnValue(new Promise(resolve => {
+      resolve(mockIncorrectFetchResponse);
+    }));
+
+    updateHTML();
+
+    window.fetchData.calls.mostRecent().returnValue
+        .then(() => {
+          expect(error).toBeTruthy();
+          done();
+        })
+        .catch(() => {
+          error = true;
+          expect(error).toBeTruthy();
+          done();
+        });
   });
 });

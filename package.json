@@ -30,9 +30,10 @@
   "scripts": {
     "launch-test": "wait-on http://localhost:8080 && opn http://localhost:8080/SpecRunner.html",
     "start-test-server": "live-server",
-    "test-browser": "concurrently \"yarn start-test-server\" \"yarn launch-test\"",
-    "test": "karma start karma.conf.js",
+    "run-tests-browser": "concurrently \"yarn start-test-server\" \"yarn launch-test\"",
+    "run-tests": "karma start karma.conf.js",
     "uglify": "uglifyjs index.js -m -c -o dist/index.js",
-    "coverage": "shx cat coverage/report-lcov/lcov.info | codacy-coverage --token 1f1b4316eb9147dc89c5ee662202c7eb"
+    "report-coverage": "shx cat coverage/report-lcov/lcov.info | codacy-coverage --token 1f1b4316eb9147dc89c5ee662202c7eb",
+    "test": "yarn run-tests && yarn report-coverage"
   }
 }
