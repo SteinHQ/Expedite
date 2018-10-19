@@ -1,15 +1,15 @@
-const fixturePath = 'tests/fixtures/read.html',
-    mockFetchResponse = fetch('tests/mockData.json'),
-    mockIncorrectFetchResponse = fetch('nonexistent.json');
-
-function mockFetch() {
-  // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
-  return new Promise(resolve => {
-    mockFetchResponse.then(response => resolve(response.clone()))
-  });
-}
-
 describe('Read Sheets', function () {
+  const fixturePath = 'tests/fixtures/read.html',
+      mockFetchResponse = fetch('tests/mockData.json'),
+      mockIncorrectFetchResponse = fetch('nonexistent.json');
+
+  function mockFetch() {
+    // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
+    return new Promise(resolve => {
+      mockFetchResponse.then(response => resolve(response.clone()))
+    });
+  }
+
   beforeAll(function (done) {
     // Initialise DOM workspace
     this.workspaceDiv = document.createElement('div');
@@ -22,6 +22,10 @@ describe('Read Sheets', function () {
           this.fixture = html;
           done();
         });
+  });
+
+  afterAll(function () {
+    document.body.removeChild(this.workspaceDiv);
   });
 
   beforeEach(function () {
@@ -213,6 +217,7 @@ describe('Read Sheets', function () {
     updateHTML();
   });
 
+  // Any changes to make this more elegant are welcome
   it('should throw error on incorrect data received', function (done) {
     let error = false;
 

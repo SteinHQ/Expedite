@@ -10,7 +10,7 @@ function updateHTML() {
     let URL = element.dataset.restsheetUrl;
     URL = URL.endsWith('/') ? URL : URL + '/'; // Normalize URL to end with slash
 
-    // Just add appropriate event handler if the parent node is a form
+    // Just add appropriate event handler if the parent node is a form, no interpolations
     if (element.tagName === 'FORM') {
       return configureForm(element, URL);
     }
