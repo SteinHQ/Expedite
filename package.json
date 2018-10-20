@@ -19,10 +19,8 @@
     "karma-cli": "^1.0.1",
     "karma-coverage": "^1.1.2",
     "karma-jasmine": "^1.1.2",
-    "karma-requirejs": "^1.1.0",
     "live-server": "^1.2.0",
     "opn-cli": "^3.1.0",
-    "requirejs": "^2.3.6",
     "shx": "^0.3.2",
     "uglify-es": "^3.3.9",
     "wait-on": "^3.1.0"
