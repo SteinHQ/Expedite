@@ -1,10 +1,6 @@
 describe('Write Sheets', function () {
   const fixturePath = 'tests/fixtures/write.html';
 
-  function mockFetch() {
-
-  }
-
   beforeAll(function (done) {
     this.workspaceDiv = document.createElement('div');
     this.workspaceDiv.id = 'workspace';
@@ -24,10 +20,18 @@ describe('Write Sheets', function () {
 
   beforeEach(function () {
     // Added spy in beforeEach because the individual specs may alter the spy.
-    spyOn(window, 'fetch').and.callFake(mockFetch);
+    spyOn(window, 'fetch').and.callThrough();
   });
 
   afterEach(function () {
     this.workspaceDiv.innerHTML = '';
   });
+
+  it('should prevent default submit behaviour, i.e., page should not refresh', function(){
+    this.workspaceDiv.innerHTML = this.fixture;
+    updateHTML();
+
+    document.getElementById('submit-button').click();
+    expect(true).toBeTruthy();
+  })
 });
