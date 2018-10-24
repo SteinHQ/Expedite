@@ -4,16 +4,13 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
     files: [
       'tests/**/*.js',
-      'tests/**/*.json',
+      {pattern: 'tests/**/*.json', watched: true, served: true, included: false},
       'tests/**/*.html',
       'index.js'
     ],
     proxies: {
       "/tests/": "/base/tests/"
     },
-    exclude: [
-      'karma.conf.js'
-    ],
     preprocessors: {
       'index.js': ['babel']
     },
@@ -21,9 +18,9 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: false,
+    autoWatch: true,
     browsers: ['ChromeHeadless'],
-    singleRun: true,
+    singleRun: false,
     concurrency: Infinity,
     coverageReporter: {
       reporters: [

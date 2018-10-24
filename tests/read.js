@@ -1,7 +1,8 @@
 describe('Read Sheets', function () {
   const fixturePath = 'tests/fixtures/read.html',
       mockFetchResponse = fetch('tests/mockData.json'),
-      mockIncorrectFetchResponse = fetch('nonexistent.json');
+      mockIncorrectFetchResponse = fetch('nonexistent.json'),
+      restsheetURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1';
 
   function mockFetch() {
     // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -39,19 +40,23 @@ describe('Read Sheets', function () {
 
   it('should hide the parent element initially', function (done) {
     this.workspaceDiv.innerHTML = this.fixture;
+    const parentElement = document.getElementById('parentElement');
+    parentElement.setAttribute('data-restsheet-url', restsheetURL);
+
     updateHTML();
 
-    expect(document.getElementById('parentElement').style.display).toBe('none');
+    expect(parentElement.style.display).toBe('none');
     done();
   });
 
-  describe('should perform request to correct URL', function () {
+  describe('should make request to correct URL', function () {
     beforeEach(function () {
       this.workspaceDiv.innerHTML = this.fixture;
       this.parentElement = document.getElementById('parentElement');
+      this.parentElement.setAttribute('data-restsheet-url', restsheetURL);
     });
 
-    it('without any options set', function (done) {
+    it('without any options set', function () {
       updateHTML();
 
       // Normalize URLs to compare them directly
@@ -59,10 +64,19 @@ describe('Read Sheets', function () {
           expectedURL = normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1');
 
       expect(requestedURL).toEqual(expectedURL);
-      done();
     });
 
-    it('with limit parameter', function (done) {
+    it('even when URL with trailing / is provided', function () {
+      this.parentElement.setAttribute('data-restsheet-url', `${restsheetURL}/`);
+      updateHTML();
+
+      const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
+          expectedURL = normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1');
+
+      expect(requestedURL).toBe(expectedURL);
+    });
+
+    it('with limit parameter', function () {
       const limitValue = 3;
       this.parentElement.setAttribute('data-restsheet-limit', limitValue.toString());
       updateHTML();
@@ -70,11 +84,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?limit=${limitValue}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with offset parameter', function (done) {
+    it('with offset parameter', function () {
       const offsetValue = 1;
       this.parentElement.setAttribute('data-restsheet-offset', offsetValue.toString());
       updateHTML();
@@ -82,11 +95,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?offset=${offsetValue}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with search parameter', function (done) {
+    it('with search parameter', function () {
       const searchConditions = {author: "Zat Rana"};
       this.parentElement.setAttribute('data-restsheet-search', JSON.stringify(searchConditions));
       updateHTML();
@@ -94,11 +106,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?search=${JSON.stringify(searchConditions)}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with both limit and offset parameters', function (done) {
+    it('with both limit and offset parameters', function () {
       const limitValue = 3,
           offsetValue = 1;
 
@@ -109,11 +120,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?limit=${limitValue}&offset=${offsetValue}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with both limit and search parameters', function (done) {
+    it('with both limit and search parameters', function () {
       const limitValue = 3,
           searchConditions = {author: "Zat Rana"};
 
@@ -124,11 +134,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?limit=${limitValue}&search=${JSON.stringify(searchConditions)}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with both offset and search parameters', function (done) {
+    it('with both offset and search parameters', function () {
       const offsetValue = 1,
           searchConditions = {author: "Zat Rana"};
 
@@ -139,11 +148,10 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
 
-    it('with all search, limit, and offset parameters', function (done) {
+    it('with all search, limit, and offset parameters', function () {
       const limitValue = 3,
           offsetValue = 1,
           searchConditions = {author: "Zat Rana"};
@@ -156,22 +164,23 @@ describe('Read Sheets', function () {
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
           expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?limit=${limitValue}&offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
 
-      expect(requestedURL).toEqual(expectedURL);
-      done();
+      expect(requestedURL).toBe(expectedURL);
     });
   });
 
   it('should make the parent element visible on receiving data', function (done) {
     // Set up an observer for changes in the parent element that would be injected later
     const mutationObserver = new MutationObserver(() => {
-      expect(document.getElementById('parentElement').style.display).toEqual('');
+      expect(parentElement.style.display).toEqual('');
       done();
     });
 
     this.workspaceDiv.innerHTML = this.fixture;
+    const parentElement = document.getElementById('parentElement');
+    parentElement.setAttribute('data-restsheet-url', restsheetURL);
 
     // Activate the observer on parent element
-    mutationObserver.observe(document.getElementById('parentElement'), {
+    mutationObserver.observe(parentElement, {
       childList: true,
       subtree: true
     });
@@ -207,9 +216,11 @@ describe('Read Sheets', function () {
     });
 
     this.workspaceDiv.innerHTML = this.fixture;
+    const parentElement = document.getElementById('parentElement');
+    parentElement.setAttribute('data-restsheet-url', restsheetURL);
 
     // Activate the observer on parent element
-    mutationObserver.observe(document.getElementById('parentElement'), {
+    mutationObserver.observe(parentElement, {
       childList: true,
       subtree: true
     });
@@ -222,6 +233,8 @@ describe('Read Sheets', function () {
     let error = false;
 
     this.workspaceDiv.innerHTML = this.fixture;
+    const parentElement = document.getElementById('parentElement');
+    parentElement.setAttribute('data-restsheet-url', restsheetURL);
     spyOn(window, 'fetchData').and.callThrough();
 
     fetch.and.returnValue(new Promise(resolve => {
@@ -232,12 +245,12 @@ describe('Read Sheets', function () {
 
     window.fetchData.calls.mostRecent().returnValue
         .then(() => {
-          expect(error).toBeTruthy();
+          expect(error).toBe(true);
           done();
         })
         .catch(() => {
           error = true;
-          expect(error).toBeTruthy();
+          expect(error).toBe(true);
           done();
         });
   });

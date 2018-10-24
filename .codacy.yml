@@ -3,3 +3,4 @@ exclude_paths:
 - 'jasmine/**'
 - 'dist/**'
 - 'karma.conf.js'
+- 'CODE_OF_CONDUCT.md'

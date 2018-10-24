@@ -81,7 +81,7 @@ function configureForm(form, URL) {
           headers: {
             'Content-Type': 'application/json; charset=utf-8',
           },
-          body: JSON.stringify([formData]) // The API expects an array of rows
+          body: JSON.stringify([formData]) // The API expects an array of rows, and we have just one row
         };
 
         fetch(URL, requestData)
