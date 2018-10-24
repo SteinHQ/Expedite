@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/append.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/mockAppendSuccessResponse.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.codacy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.codacy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpecRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpecRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/read.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/append.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/write.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,9 +43,9 @@
           <entry key="babelrc" value="4" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="29" />
-          <entry key="js" value="52" />
-          <entry key="json" value="17" />
+          <entry key="html" value="30" />
+          <entry key="js" value="54" />
+          <entry key="json" value="18" />
           <entry key="md" value="8" />
           <entry key="png" value="1" />
           <entry key="yml" value="6" />
@@ -65,10 +54,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="29" />
+          <entry key="HTML" value="30" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="52" />
+          <entry key="JSON" value="22" />
+          <entry key="JavaScript" value="54" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="YAML" value="6" />
@@ -80,10 +69,10 @@
           <entry key="css" value="351" />
           <entry key="gitignore" value="11" />
           <entry key="html" value="2264" />
-          <entry key="js" value="10095" />
+          <entry key="js" value="10104" />
           <entry key="json" value="307" />
           <entry key="md" value="1322" />
-          <entry key="txt" value="843" />
+          <entry key="txt" value="860" />
           <entry key="yml" value="95" />
         </counts>
       </usages-collector>
@@ -93,9 +82,9 @@
           <entry key="HTML" value="2266" />
           <entry key="JSON" value="323" />
           <entry key="JSON5" value="2" />
-          <entry key="JavaScript" value="10094" />
+          <entry key="JavaScript" value="10103" />
           <entry key="Markdown" value="1100" />
-          <entry key="PLAIN_TEXT" value="1072" />
+          <entry key="PLAIN_TEXT" value="1089" />
           <entry key="YAML" value="95" />
         </counts>
       </usages-collector>
@@ -160,11 +149,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.codacy.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="100">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/fixtures/read.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -243,8 +259,8 @@
         <option value="$PROJECT_DIR$/tests/read.js" />
         <option value="$PROJECT_DIR$/tests/append.js" />
         <option value="$PROJECT_DIR$/tests/mockAppendSuccessResponse.json" />
-        <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/.codacy.yml" />
+        <option value="$PROJECT_DIR$/karma.conf.js" />
       </list>
     </option>
   </component>
@@ -308,13 +324,20 @@
             <path>
               <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
               <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
               <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="report-lcov" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restsheet-interpolate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restsheet-interpolate" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="report-lcov" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,7 +450,7 @@
       <workItem from="1540023292951" duration="4997000" />
       <workItem from="1540393699345" duration="693000" />
       <workItem from="1540394513643" duration="5761000" />
-      <workItem from="1540402255058" duration="7259000" />
+      <workItem from="1540402255058" duration="7807000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -583,11 +606,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539961106756</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added write tests">
+      <created>1540409594926</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1540409594926</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155569000" />
+    <option name="totallyTimeSpent" value="156117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,7 +686,8 @@
     <MESSAGE value="Implemented coverage reporting to Codacy, removed Gulp, achieved its functionality via NPM scripting" />
     <MESSAGE value="Added tests, updated NPM script" />
     <MESSAGE value="Bootstrapped write tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bootstrapped write tests" />
+    <MESSAGE value="Added write tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added write tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -763,24 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/fixtures/append.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="49" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -812,17 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.codacy.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="100">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -831,6 +841,27 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/read.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
