@@ -1,10 +1,7 @@
 describe('Write Sheets', function () {
-  //{
-  //   "updatedRange": "Sheet1!A8C9"
-  // }
   const fixturePath = 'tests/fixtures/append.html',
       restsheetURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1',
-      mockAppendSuccessResponse = fetch('tests/mockAppendSuccessResponse.json');
+      mockAppendSuccessResponse = fetch('tests/mock-data/mockAppendSuccessResponse.json');
 
   function mockFetch() {
     // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -103,7 +100,7 @@ describe('Write Sheets', function () {
       document.getElementById('submit-button').click();
     });
 
-    /*it('should provide details of response', function (done) {
+    it('should provide details of response', function (done) {
       document.getElementById('parentElement').addEventListener('ResponseReceived', (event) => {
         expect(event.detail).toEqual({
           status: 200,
@@ -115,7 +112,7 @@ describe('Write Sheets', function () {
       fetch.and.callFake(mockFetch);
 
       document.getElementById('submit-button').click();
-    });*/
+    });
   });
 
 });
