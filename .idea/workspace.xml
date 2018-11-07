@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="">
+    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Changed pro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/append.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/append.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/mockAppendSuccessResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mock-data/mockAppendSuccessResponse.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/mockData.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mock-data/mockData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/normalizeURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/utils/normalizeURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -149,41 +150,84 @@
     <session id="1146720950">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="js" value="9" />
+          <entry key="js" value="10" />
           <entry key="json" value="4" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="9" />
+          <entry key="JavaScript" value="10" />
+          <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="25" />
           <entry key="js" value="460" />
+          <entry key="txt" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="25" />
           <entry key="JavaScript" value="460" />
+          <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="764420026">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="4" />
+          <entry key="js" value="5" />
+          <entry key="json" value="1" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="5" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="5" />
+          <entry key="md" value="56" />
+          <entry key="txt" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="5" />
+          <entry key="Markdown" value="56" />
+          <entry key="PLAIN_TEXT" value="14" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileColors">
@@ -193,50 +237,15 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/append.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2067">
-              <caret line="3" column="90" selection-start-line="3" selection-start-column="90" selection-end-line="3" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/read.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <element signature="e#321#607#0" />
-                <element signature="e#637#971#0" />
-                <element signature="e#998#1053#0" />
-                <element signature="e#1082#1218#0" />
-                <element signature="e#1246#1289#0" />
-                <element signature="e#1358#1633#0" />
-                <element signature="e#1727#1928#0" />
-                <element signature="e#1978#2285#0" />
-                <element signature="e#2353#2689#0" />
-                <element signature="e#2736#3126#0" />
-                <element signature="e#3174#3569#0" />
-                <element signature="e#3617#4074#0" />
-                <element signature="e#4138#4666#0" />
-                <element signature="e#4730#5320#0" />
-                <element signature="e#5385#5980#0" />
-                <element signature="e#6052#6779#0" />
-                <element signature="e#6870#7448#0" />
-                <element signature="e#7523#8945#0" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="345">
+                <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -245,11 +254,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console.log</find>
-      <find>consol</find>
-      <find>`</find>
-      <find>uglify-es</find>
-      <find>getFi</find>
       <find>fetchMock</find>
       <find>fetchMockDataResponse.clone()</find>
       <find>fetch</find>
@@ -272,10 +276,19 @@
       <find>normali</find>
       <find>throw</find>
       <find>window.</find>
+      <find>rests</find>
+      <find>rest</find>
+      <find>restsheet</find>
+      <find>`</find>
+      <find>interp</find>
+      <find>stein</find>
+      <find>interpolate</find>
+      <find>Restsheet</find>
     </findStrings>
     <replaceStrings>
       <replace>fetchMockDataResponse()</replace>
       <replace>toBe(true)</replace>
+      <replace>stein</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -289,7 +302,6 @@
         <option value="$PROJECT_DIR$/example/index.css" />
         <option value="$PROJECT_DIR$/example/index.html" />
         <option value="$PROJECT_DIR$/test/index.html" />
-        <option value="$PROJECT_DIR$/example/form.html" />
         <option value="$PROJECT_DIR$/test/fixtures/OnlyParent.html" />
         <option value="$PROJECT_DIR$/test/utils/URLNormalizer.js" />
         <option value="$PROJECT_DIR$/test/utils/normalizeURL.js" />
@@ -302,8 +314,6 @@
         <option value="$PROJECT_DIR$/tests/fixtures/tests/read.html" />
         <option value="$PROJECT_DIR$/tests/karma.conf.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/example/blog.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tests/mockData.json" />
         <option value="$PROJECT_DIR$/dist/index.js" />
@@ -312,7 +322,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tests/fixtures/read.html" />
         <option value="$PROJECT_DIR$/tests/fixtures/write.html" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/tests/write.js" />
         <option value="$PROJECT_DIR$/tests/mockAppendSuccessResponse.json" />
         <option value="$PROJECT_DIR$/.codacy.yml" />
@@ -320,8 +329,12 @@
         <option value="$PROJECT_DIR$/tests/utils/functions.js" />
         <option value="$PROJECT_DIR$/SpecRunner.html" />
         <option value="$PROJECT_DIR$/karma.conf.js" />
-        <option value="$PROJECT_DIR$/tests/read.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/example/blog.html" />
+        <option value="$PROJECT_DIR$/example/form.html" />
         <option value="$PROJECT_DIR$/tests/append.js" />
+        <option value="$PROJECT_DIR$/tests/read.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -346,10 +359,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="832" />
-    <option name="y" value="-4" />
-    <option name="width" value="768" />
-    <option name="height" value="904" />
+    <option name="x" value="6" />
+    <option name="y" value="34" />
+    <option name="width" value="804" />
+    <option name="height" value="866" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -379,43 +392,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
+              <item name="Stein-Expedite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Stein-Expedite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
-              <item name="report-lcov" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
-              <item name="report-lcov" type="462c0819:PsiDirectoryNode" />
-              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
+              <item name="Stein-Expedite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Stein-Expedite" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="mock-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestSheet-Interpolate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestSheet-Interpolate" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,7 +412,7 @@
     <property name="SearchEverywhereHistoryKey" value="read.js&#9;FILE&#9;file://C:/Users/HOME-PC.HOME/Desktop/webdev/restsheet-interpolate/tests/read.js&#10;index&#9;FILE&#9;file://C:/Users/HOME-PC.HOME/Desktop/webdev/restsheet-interpolate/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RestSheet" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -533,7 +516,9 @@
       <workItem from="1540728993309" duration="105000" />
       <workItem from="1541430653450" duration="221000" />
       <workItem from="1541430917428" duration="1660000" />
-      <workItem from="1541440734868" duration="4108000" />
+      <workItem from="1541440734868" duration="4399000" />
+      <workItem from="1541526380184" duration="49000" />
+      <workItem from="1541587792132" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -696,11 +681,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540409594926</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added write test, improved code quality and folder structure.">
+      <created>1541445343911</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1541445343911</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162211000" />
+    <option name="totallyTimeSpent" value="163354000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,11 +704,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <frame x="0" y="25" width="1600" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4839142" visible="true" weight="0.20502645" />
-      <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" weight="0.24851191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4871795" visible="true" weight="0.15672588" />
+      <window_info id="Structure" order="1" sideWeight="0.51282054" side_tool="true" weight="0.15672588" />
       <window_info id="Gulp" order="2" sideWeight="0.5160858" side_tool="true" weight="0.14629513" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -728,9 +720,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" weight="0.20542635" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" visible="true" weight="0.20512821" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.40348527" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32707775" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3268734" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -770,7 +762,8 @@
     <MESSAGE value="Added tests, updated NPM script" />
     <MESSAGE value="Bootstrapped write tests" />
     <MESSAGE value="Added write tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added write tests" />
+    <MESSAGE value="Added write test, improved code quality and folder structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added write test, improved code quality and folder structure." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
@@ -795,21 +788,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coverage/HeadlessChrome 0.0.0 (Windows 10 0.0.0)/index.html" />
-    <entry file="file://$PROJECT_DIR$/example/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="7" column="104" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -829,24 +808,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/coverage/report-lcov/lcov-report/index.html" />
-    <entry file="file://$PROJECT_DIR$/example/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="81" selection-start-line="9" selection-start-column="8" selection-end-line="25" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/append.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -857,11 +822,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md" />
     <entry file="file://$PROJECT_DIR$/.codacy.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/boot.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine-html.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpecRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/utils/functions.js" />
+    <entry file="file://$PROJECT_DIR$/tests/mock-data/mockAppendSuccessResponse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-897" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/utils/normalizeURL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/append.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -872,98 +902,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/utils/normalizeURL.js">
+    <entry file="file://$PROJECT_DIR$/tests/append.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/boot.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jasmine/lib/jasmine-3.2.1/jasmine-html.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3588">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpecRunner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/utils/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mock-data/mockAppendSuccessResponse.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
+        <state relative-caret-position="-115">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/read.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#321#607#0" />
-            <element signature="e#637#971#0" />
-            <element signature="e#998#1053#0" />
-            <element signature="e#1082#1218#0" />
-            <element signature="e#1246#1289#0" />
-            <element signature="e#1358#1633#0" />
-            <element signature="e#1727#1928#0" />
-            <element signature="e#1978#2285#0" />
-            <element signature="e#2353#2689#0" />
-            <element signature="e#2736#3126#0" />
-            <element signature="e#3174#3569#0" />
-            <element signature="e#3617#4074#0" />
-            <element signature="e#4138#4666#0" />
-            <element signature="e#4730#5320#0" />
-            <element signature="e#5385#5980#0" />
-            <element signature="e#6052#6779#0" />
-            <element signature="e#6870#7448#0" />
-            <element signature="e#7523#8945#0" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/append.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2067">
-          <caret line="3" column="90" selection-start-line="3" selection-start-column="90" selection-end-line="3" selection-end-column="90" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

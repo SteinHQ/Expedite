@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', updateHTML);
 
 function updateHTML() {
-  const applicableParents = document.querySelectorAll('[data-restsheet-url]');
+  const applicableParents = document.querySelectorAll('[data-stein-url]');
   for (let i = 0, element; (element = applicableParents[i]); i++) {
-    const search = element.dataset.restsheetSearch,
-        limit = element.dataset.restsheetLimit,
-        offset = element.dataset.restsheetOffset;
+    const search = element.dataset.steinSearch,
+        limit = element.dataset.steinLimit,
+        offset = element.dataset.steinOffset;
 
-    let URL = element.dataset.restsheetUrl;
+    let URL = element.dataset.steinUrl;
     URL = URL.endsWith('/') ? URL : URL + '/'; // Normalize URL to end with slash
 
     // Just add appropriate event handler if the parent node is a form, no interpolations

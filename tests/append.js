@@ -1,6 +1,6 @@
 describe('Write Sheets', function () {
   const fixturePath = 'tests/fixtures/append.html',
-      restsheetURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1',
+      steinURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1',
       mockAppendSuccessResponse = fetch('tests/mock-data/mockAppendSuccessResponse.json');
 
   function mockFetch() {
@@ -32,7 +32,7 @@ describe('Write Sheets', function () {
     spyOn(window, 'fetch').and.callThrough();
 
     this.workspaceDiv.innerHTML = this.fixture;
-    document.getElementById('parentElement').setAttribute('data-restsheet-url', restsheetURL);
+    document.getElementById('parentElement').setAttribute('data-stein-url', steinURL);
 
     updateHTML();
   });

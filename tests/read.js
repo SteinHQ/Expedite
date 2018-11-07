@@ -2,7 +2,7 @@ describe('Read Sheets', function () {
   const fixturePath = 'tests/fixtures/read.html',
       mockFetchResponse = fetch('tests/mock-data/mockData.json'),
       mockIncorrectFetchResponse = fetch('nonexistent.json'),
-      restsheetURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1';
+      steinURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1';
 
   function mockFetch() {
     // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -41,7 +41,7 @@ describe('Read Sheets', function () {
   it('should hide the parent element initially', function (done) {
     this.workspaceDiv.innerHTML = this.fixture;
     const parentElement = document.getElementById('parentElement');
-    parentElement.setAttribute('data-restsheet-url', restsheetURL);
+    parentElement.setAttribute('data-stein-url', steinURL);
 
     updateHTML();
 
@@ -53,7 +53,7 @@ describe('Read Sheets', function () {
     beforeEach(function () {
       this.workspaceDiv.innerHTML = this.fixture;
       this.parentElement = document.getElementById('parentElement');
-      this.parentElement.setAttribute('data-restsheet-url', restsheetURL);
+      this.parentElement.setAttribute('data-stein-url', steinURL);
     });
 
     it('without any options set', function () {
@@ -67,7 +67,7 @@ describe('Read Sheets', function () {
     });
 
     it('even when URL with trailing / is provided', function () {
-      this.parentElement.setAttribute('data-restsheet-url', `${restsheetURL}/`);
+      this.parentElement.setAttribute('data-stein-url', `${steinURL}/`);
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -78,7 +78,7 @@ describe('Read Sheets', function () {
 
     it('with limit parameter', function () {
       const limitValue = 3;
-      this.parentElement.setAttribute('data-restsheet-limit', limitValue.toString());
+      this.parentElement.setAttribute('data-stein-limit', limitValue.toString());
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -89,7 +89,7 @@ describe('Read Sheets', function () {
 
     it('with offset parameter', function () {
       const offsetValue = 1;
-      this.parentElement.setAttribute('data-restsheet-offset', offsetValue.toString());
+      this.parentElement.setAttribute('data-stein-offset', offsetValue.toString());
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -100,7 +100,7 @@ describe('Read Sheets', function () {
 
     it('with search parameter', function () {
       const searchConditions = {author: "Zat Rana"};
-      this.parentElement.setAttribute('data-restsheet-search', JSON.stringify(searchConditions));
+      this.parentElement.setAttribute('data-stein-search', JSON.stringify(searchConditions));
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -113,8 +113,8 @@ describe('Read Sheets', function () {
       const limitValue = 3,
           offsetValue = 1;
 
-      this.parentElement.setAttribute('data-restsheet-limit', limitValue.toString());
-      this.parentElement.setAttribute('data-restsheet-offset', offsetValue.toString());
+      this.parentElement.setAttribute('data-stein-limit', limitValue.toString());
+      this.parentElement.setAttribute('data-stein-offset', offsetValue.toString());
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -127,8 +127,8 @@ describe('Read Sheets', function () {
       const limitValue = 3,
           searchConditions = {author: "Zat Rana"};
 
-      this.parentElement.setAttribute('data-restsheet-limit', limitValue.toString());
-      this.parentElement.setAttribute('data-restsheet-search', JSON.stringify(searchConditions));
+      this.parentElement.setAttribute('data-stein-limit', limitValue.toString());
+      this.parentElement.setAttribute('data-stein-search', JSON.stringify(searchConditions));
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -141,8 +141,8 @@ describe('Read Sheets', function () {
       const offsetValue = 1,
           searchConditions = {author: "Zat Rana"};
 
-      this.parentElement.setAttribute('data-restsheet-offset', offsetValue.toString());
-      this.parentElement.setAttribute('data-restsheet-search', JSON.stringify(searchConditions));
+      this.parentElement.setAttribute('data-stein-offset', offsetValue.toString());
+      this.parentElement.setAttribute('data-stein-search', JSON.stringify(searchConditions));
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -156,9 +156,9 @@ describe('Read Sheets', function () {
           offsetValue = 1,
           searchConditions = {author: "Zat Rana"};
 
-      this.parentElement.setAttribute('data-restsheet-limit', limitValue.toString());
-      this.parentElement.setAttribute('data-restsheet-offset', offsetValue.toString());
-      this.parentElement.setAttribute('data-restsheet-search', JSON.stringify(searchConditions));
+      this.parentElement.setAttribute('data-stein-limit', limitValue.toString());
+      this.parentElement.setAttribute('data-stein-offset', offsetValue.toString());
+      this.parentElement.setAttribute('data-stein-search', JSON.stringify(searchConditions));
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
@@ -177,7 +177,7 @@ describe('Read Sheets', function () {
 
     this.workspaceDiv.innerHTML = this.fixture;
     const parentElement = document.getElementById('parentElement');
-    parentElement.setAttribute('data-restsheet-url', restsheetURL);
+    parentElement.setAttribute('data-stein-url', steinURL);
 
     // Activate the observer on parent element
     mutationObserver.observe(parentElement, {
@@ -217,7 +217,7 @@ describe('Read Sheets', function () {
 
     this.workspaceDiv.innerHTML = this.fixture;
     const parentElement = document.getElementById('parentElement');
-    parentElement.setAttribute('data-restsheet-url', restsheetURL);
+    parentElement.setAttribute('data-stein-url', steinURL);
 
     // Activate the observer on parent element
     mutationObserver.observe(parentElement, {
@@ -232,7 +232,7 @@ describe('Read Sheets', function () {
   it('should throw error on incorrect data received', function (done) {
     this.workspaceDiv.innerHTML = this.fixture;
     const parentElement = document.getElementById('parentElement');
-    parentElement.setAttribute('data-restsheet-url', restsheetURL);
+    parentElement.setAttribute('data-stein-url', steinURL);
     spyOn(window, 'fetchData').and.callThrough();
 
     fetch.and.returnValue(new Promise(resolve => {
