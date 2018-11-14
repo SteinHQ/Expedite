@@ -45,8 +45,7 @@ function fetchData({URL, search, limit, offset}) {
     search ? `search=${search}` : ''
   ];
 
-  const searchURLSegment = search ? 'search/' : '';
-  const queryURL = `${URL}${searchURLSegment}?${URLGetParameters.join('&')}`;
+  const queryURL = `${URL}?${URLGetParameters.join('&')}`;
 
   return new Promise((resolve, reject) => {
     fetch(queryURL)
@@ -64,7 +63,6 @@ function interpolateString(string, replacements) {
 }
 
 function configureForm(form, URL) {
-  URL = `${URL}append`;
   form.addEventListener('submit', (e) => {
         e.preventDefault();
         let formData = new FormData(form);

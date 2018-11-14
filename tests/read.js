@@ -2,7 +2,7 @@ describe('Read Sheets', function () {
   const fixturePath = 'tests/fixtures/read.html',
       mockFetchResponse = fetch('tests/mock-data/mockData.json'),
       mockIncorrectFetchResponse = fetch('nonexistent.json'),
-      steinURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1';
+      steinURL = 'http://localhost:8080/v1/storages/5bbf8e7e78625c1890294656/Sheet1';
 
   function mockFetch() {
     // Need this cute line to return a 'clone' of the mock fetch response. This is because a ReadableStream's .json() can only be called once. After all, it's a stream.
@@ -61,7 +61,7 @@ describe('Read Sheets', function () {
 
       // Normalize URLs to compare them directly
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1');
+          expectedURL = normalizeURL(steinURL);
 
       expect(requestedURL).toEqual(expectedURL);
     });
@@ -71,7 +71,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1');
+          expectedURL = normalizeURL(steinURL);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -82,7 +82,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?limit=${limitValue}`);
+          expectedURL = normalizeURL(`${steinURL}/?limit=${limitValue}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -93,7 +93,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?offset=${offsetValue}`);
+          expectedURL = normalizeURL(`${steinURL}/?offset=${offsetValue}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -104,7 +104,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?search=${JSON.stringify(searchConditions)}`);
+          expectedURL = normalizeURL(`${steinURL}/?search=${JSON.stringify(searchConditions)}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -118,7 +118,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/?limit=${limitValue}&offset=${offsetValue}`);
+          expectedURL = normalizeURL(`${steinURL}/?limit=${limitValue}&offset=${offsetValue}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -132,7 +132,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?limit=${limitValue}&search=${JSON.stringify(searchConditions)}`);
+          expectedURL = normalizeURL(`${steinURL}/?limit=${limitValue}&search=${JSON.stringify(searchConditions)}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -146,7 +146,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
+          expectedURL = normalizeURL(`${steinURL}/?offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
 
       expect(requestedURL).toBe(expectedURL);
     });
@@ -162,7 +162,7 @@ describe('Read Sheets', function () {
       updateHTML();
 
       const requestedURL = normalizeURL(fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL(`http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/search/?limit=${limitValue}&offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
+          expectedURL = normalizeURL(`${steinURL}/?limit=${limitValue}&offset=${offsetValue}&search=${JSON.stringify(searchConditions)}`);
 
       expect(requestedURL).toBe(expectedURL);
     });

@@ -1,6 +1,6 @@
 describe('Write Sheets', function () {
   const fixturePath = 'tests/fixtures/append.html',
-      steinURL = 'http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1',
+      steinURL = 'http://localhost:8080/v1/storages/5bbf8e7e78625c1890294656/Sheet1',
       mockAppendSuccessResponse = fetch('tests/mock-data/mockAppendSuccessResponse.json');
 
   function mockFetch() {
@@ -53,7 +53,7 @@ describe('Write Sheets', function () {
       document.getElementById('submit-button').click();
 
       const requestedURL = normalizeURL(window.fetch.calls.mostRecent().args[0]),
-          expectedURL = normalizeURL('http://localhost/storage/5bbf8e7e78625c1890294656/Sheet1/append');
+          expectedURL = normalizeURL(steinURL);
 
       expect(requestedURL).toBe(expectedURL);
     });
