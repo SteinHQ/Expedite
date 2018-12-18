@@ -31,7 +31,9 @@ Here's the HTML you'd need to display this data.
 ```
 
 And you're done! Add a few Bootstrap classes to get a neat result.
-![Posts List Demo Screenshot](assets/demo-blog-screenshot.png?raw=true)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/19777714/50134649-05239700-02b7-11e9-8cbc-7e0235ecbdab.png" alt="Posts List Demo Screenshot">
+</p>
 
 ### Add a Post
 Simply set the `data-stein-url` attribute of the form. Here's an example of the markup you'd to create an interface to add posts to the Google Sheet.
@@ -59,7 +61,9 @@ Simply set the `data-stein-url` attribute of the form. Here's an example of the 
 ```
 And there it is again. The submissions will be added to the Google Sheet.
 
-![Add Post Demo GIF](assets/demo-form.gif)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/19777714/50134707-52a00400-02b7-11e9-81f4-ab5e85f36463.gif" alt="Add Post Demo GIF">
+</p>
 
 ### Search, Limit, and Offset
 You can also directly search the sheet, and limit and offset the results. These can be set via the `data-stein-search`, `data-stein-limit`, and `data-stein-offset` attributes respectively.
