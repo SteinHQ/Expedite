@@ -1,6 +1,6 @@
 exclude_paths:
-- 'tests/**'
-- 'jasmine/**'
-- 'dist/**'
-- 'karma.conf.js'
-- 'CODE_OF_CONDUCT.md'
+  - "tests/**"
+  - "jasmine/**"
+  - "dist/**"
+  - "karma.conf.js"
+  - "CODE_OF_CONDUCT.md"

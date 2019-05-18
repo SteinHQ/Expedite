@@ -1,51 +1,79 @@
 <html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<div class="container my-5">
-    <form data-stein-url="http://localhost:8080/v1/storages/5be5fa57e10a8b38ac96f582/Sheet1" class="my-3" id="sheet-form">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <form
+        data-stein-url="http://localhost:8080/v1/storages/5be5fa57e10a8b38ac96f582/Sheet1"
+        class="my-3"
+        id="sheet-form"
+      >
         <div class="form-group">
-            <label for="title-input">Title</label>
-            <input id="title-input" name="title" class="form-control form-control-lg">
+          <label for="title-input">Title</label>
+          <input
+            id="title-input"
+            name="title"
+            class="form-control form-control-lg"
+          />
         </div>
         <div class="form-group">
-            <label for="author-input">Author</label>
-            <input type="text" id="author-input" name="author" class="form-control">
+          <label for="author-input">Author</label>
+          <input
+            type="text"
+            id="author-input"
+            name="author"
+            class="form-control"
+          />
         </div>
         <div class="form-group">
-            <label for="link-input">Medium Link</label>
-            <input type="url" id="link-input" name="link" class="form-control">
+          <label for="link-input">Medium Link</label>
+          <input type="url" id="link-input" name="link" class="form-control" />
         </div>
         <div class="form-group">
-            <label for="content-textarea">Content</label>
-            <textarea name="content" id="content-textarea" rows="5" class="form-control"></textarea>
+          <label for="content-textarea">Content</label>
+          <textarea
+            name="content"
+            id="content-textarea"
+            rows="5"
+            class="form-control"
+          ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-    </form>
-    <div class="alert alert-success invisible" role="alert" id="completed-alert">
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </form>
+      <div
+        class="alert alert-success invisible"
+        role="alert"
+        id="completed-alert"
+      >
         Row Appended!
+      </div>
     </div>
-</div>
-<script src="../dist/index.js"></script>
-<script>
-  const submitButton = document.getElementById("submit"),
-      requestCompletedAlert = document.getElementById("completed-alert"),
-      form = document.getElementById('sheet-form');
+    <script src="../dist/index.js"></script>
+    <script>
+      const submitButton = document.getElementById("submit"),
+        requestCompletedAlert = document.getElementById("completed-alert"),
+        form = document.getElementById("sheet-form");
 
-  form.addEventListener('submit', () => {
-    submitButton.disabled = true;
-    requestCompletedAlert.classList.add('invisible');
-  });
+      form.addEventListener("submit", () => {
+        submitButton.disabled = true;
+        requestCompletedAlert.classList.add("invisible");
+      });
 
-  form.addEventListener('ResponseReceived', (event) => {
-    if (event.detail.status === 200) {
-      requestCompletedAlert.classList.remove('invisible');
-    }
-    submitButton.disabled = false;
-  })
-</script>
-</body>
+      form.addEventListener("ResponseReceived", event => {
+        if (event.detail.status === 200) {
+          requestCompletedAlert.classList.remove("invisible");
+        }
+        submitButton.disabled = false;
+      });
+    </script>
+  </body>
 </html>
