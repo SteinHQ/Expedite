@@ -1,6 +1,6 @@
 {
   "name": "stein-expedite",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "author": "Shiven Sinha <shivensinha4@gmail.com>",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "start-test-server": "live-server",
     "run-tests-browser": "concurrently \"yarn start-test-server\" \"yarn launch-test\"",
     "run-tests": "karma start karma.conf.js",
-    "build": "terser index.js -m -c -o dist/index.js",
+    "build": "terser index.js --source-map -m -c -o dist/index.js",
     "report-coverage": "shx cat coverage/report-lcov/lcov.info | codacy-coverage --token 1f1b4316eb9147dc89c5ee662202c7eb",
     "test": "yarn run-tests && yarn report-coverage"
   }
