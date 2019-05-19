@@ -25,8 +25,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="253">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -74,6 +83,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -165,6 +177,17 @@
               <item name="expedite" type="b2602c69:ProjectViewProjectNode" />
               <item name="expedite" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="expedite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expedite" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expedite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expedite" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="index.js" type="620a8d5e:NestingTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -241,8 +264,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gulp.js.default" />
       <item itemvalue="JavaScript Debug.SpecRunner.html" />
+      <item itemvalue="Gulp.js.default" />
     </list>
     <recent_temporary>
       <list>
@@ -486,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172731000" />
+    <option name="totallyTimeSpent" value="174616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +538,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" visible="true" weight="0.3213703" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49776787" weight="0.3213703" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.40348527" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32463294" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -599,8 +622,8 @@
     <entry file="file://$PROJECT_DIR$/coverage/HeadlessChrome 0.0.0 (Windows 10 0.0.0)/index.html" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="161">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -769,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="253">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>

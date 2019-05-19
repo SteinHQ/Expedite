@@ -2,8 +2,23 @@
   "name": "stein-expedite",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "Shiven Sinha <shivensinha4@gmail.com>",
-  "license": "MIT",
+  "description": "Use plain HTML to connect your website to Google Sheets",
+  "author": "Stein <hello@steinhq.com>",
+  "homepage": "https://steinhq.com/",
+  "license": "GPLv3",
+  "keywords": [
+    "stein",
+    "google sheets",
+    "form",
+    "handlebars",
+    "database",
+    "template",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SteinHQ/Expedite.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
