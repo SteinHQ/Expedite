@@ -5,7 +5,8 @@
   "description": "Use plain HTML to connect your website to Google Sheets",
   "author": "Stein <hello@steinhq.com>",
   "homepage": "https://steinhq.com/",
-  "license": "GPLv3",
+  "license": "MIT",
+  "unpkg": "dist/index.js",
   "keywords": [
     "stein",
     "google sheets",
