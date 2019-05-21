@@ -1,4 +1,4 @@
-<!-- Change the URL in all samples, use jsDelivr as CDN, mention about XSS -->
+<!-- Change the URL in all samples, mention about XSS -->
 
 # Stein Expedite
 
@@ -19,4 +19,4 @@ Find docs on the [Stein Documentation](https://docs.steinhq.com/expedite-introdu
 
 ## License
 
-Stein Expedite is released as open source software under the [GPL v3](https://opensource.org/licenses/gpl-3.0.html) license. See the [LICENSE](./LICENSE.md) file in the project root for more details.
+Stein Expedite is [MIT licensed](./LICENSE.md).
