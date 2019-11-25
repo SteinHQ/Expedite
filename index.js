@@ -68,13 +68,8 @@ function configureForm(form, URL) {
     let formData = new FormData(form);
 
     // Convert FormData into JSON
-    formData = Array.from(formData.entries()).reduce(
-      (memo, pair) => ({
-        ...memo,
-        [pair[0]]: pair[1]
-      }),
-      {}
-    );
+    const parsedFormData = {};
+    formData.forEach((value, key) => {parsedFormData[key] = value});
 
     const requestData = {
       method: "POST",
@@ -82,7 +77,7 @@ function configureForm(form, URL) {
       headers: {
         "Content-Type": "application/json; charset=utf-8"
       },
-      body: JSON.stringify([formData]) // The API expects an array of rows, and we have just one row
+      body: JSON.stringify([parsedFormData]) // The API expects an array of rows, and we have just one row
     };
 
     fetch(URL, requestData)
