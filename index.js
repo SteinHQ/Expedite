@@ -33,6 +33,7 @@ function updateHTML() {
         element.style.display = "";
       })
       .catch(error => {
+        console.log(error);
         throw new Error(error);
       });
   }
@@ -50,7 +51,10 @@ function fetchData({ URL, search, limit, offset }) {
   return new Promise((resolve, reject) => {
     fetch(queryURL)
       .then(response => response.json())
-      .then(response => resolve(response))
+      .then(response => {
+        if (response.ok) resolve(response);
+        else reject(response);
+      })
       .catch(error => reject(error));
   });
 }
