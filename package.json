@@ -21,8 +21,9 @@
     "url": "git://github.com/SteinHQ/Expedite.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "babel-plugin-istanbul": "^5.1.0",
     "codacy-coverage": "^3.1.0",
     "concurrently": "^4.0.1",
@@ -46,7 +47,7 @@
     "start-test-server": "live-server",
     "run-tests-browser": "concurrently \"yarn start-test-server\" \"yarn launch-test\"",
     "run-tests": "karma start karma.conf.js",
-    "build": "terser index.js --source-map -m -c -o dist/index.js",
+    "build": "babel index.js --out-dir dist && terser dist/index.js --source-map -m -c -o dist/index.js",
     "report-coverage": "shx cat coverage/report-lcov/lcov.info | codacy-coverage --token 1f1b4316eb9147dc89c5ee662202c7eb",
     "test": "yarn run-tests && yarn report-coverage"
   }
