@@ -2,7 +2,7 @@
 
 # Stein Expedite
 
-[![Build Status](https://travis-ci.com/shivensinha4/Stein-Expedite.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/Stein-Expedite) [![Codacy Quality Badge](https://api.codacy.com/project/badge/Grade/d632e2064f934c52a513d6d3304a55b0)](https://www.codacy.com?utm_source=github.com&utm_medium=referral&utm_content=steinhq/expedite&utm_campaign=Badge_Grade) [![Codacy Coverage Badge](https://api.codacy.com/project/badge/Coverage/d632e2064f934c52a513d6d3304a55b0)](https://www.codacy.com?utm_source=github.com&utm_medium=referral&utm_content=steinhq/expedite&utm_campaign=Badge_Coverage)
+[![Build Status](https://travis-ci.com/shivensinha4/Stein-Expedite.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/Stein-Expedite) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c323f23373584b29ab6d0777e3de1a16)](https://www.codacy.com/gh/SteinHQ/Expedite/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SteinHQ/Expedite&amp;utm_campaign=Badge_Grade)
 
 Stein Expedite helps you
 
