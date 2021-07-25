@@ -49,6 +49,6 @@
     "run-tests": "karma start karma.conf.js",
     "build": "babel index.js --out-dir dist && terser dist/index.js --source-map -m -c -o dist/index.js",
     "report-coverage": "shx cat coverage/report-lcov/lcov.info | codacy-coverage --token 1f1b4316eb9147dc89c5ee662202c7eb",
-    "test": "yarn run-tests && yarn report-coverage"
+    "test": "yarn run-tests"
   }
 }
