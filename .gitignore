@@ -8,6 +8,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+# IDE user-specific settings
+.idea/workspace.xml
+
 # Optional npm cache directory
 .npm
 
