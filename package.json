@@ -1,6 +1,6 @@
 {
   "name": "stein-expedite",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "index.js",
   "description": "Use plain HTML to connect your website to Google Sheets",
   "author": "Stein <hello@steinhq.com>",
