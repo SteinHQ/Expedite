@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Now prints fetch errors">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="8487a1b0-4f31-49d6-b758-4f509f452424" name="Default Changelist" comment="Updated packages&#10;&#10;- All packages were updated to the latest versions (package.json)&#10;- fetch() to XHR helper was renamed to legacyFetch in the global scope (index.js)&#10;- Tests were modified to work with legacyFetch arguments which were a bit different from normal fetch (read.js and append.js)&#10;- Small prettier config added&#10;- Removed stale Codacy badge from README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/append.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/append.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +27,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="package-updates" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -90,7 +91,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\shive\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -141,7 +142,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.blog.html" />
+        <item itemvalue="JavaScript Debug.SpecRunner.html" />
         <item itemvalue="Gulp.js.default" />
+        <item itemvalue="JavaScript Debug.blog.html" />
         <item itemvalue="JavaScript Debug.SpecRunner.html" />
       </list>
     </recent_temporary>
@@ -205,7 +208,9 @@
       <workItem from="1587108719107" duration="1538000" />
       <workItem from="1587476834428" duration="5385000" />
       <workItem from="1627105471598" duration="4222000" />
-      <workItem from="1627137448400" duration="7631000" />
+      <workItem from="1627137448400" duration="7959000" />
+      <workItem from="1627199146929" duration="814000" />
+      <workItem from="1627233448642" duration="2816000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic functionality for saving data to spreadsheet via forms">
       <created>1539107831595</created>
@@ -410,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587109443569</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated packages&#10;&#10;- All packages were updated to the latest versions (package.json)&#10;- fetch() to XHR helper was renamed to legacyFetch in the global scope (index.js)&#10;- Tests were modified to work with legacyFetch arguments which were a bit different from normal fetch (read.js and append.js)&#10;- Small prettier config added&#10;- Removed stale Codacy badge from README.md">
+      <created>1627151027819</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1627151027819</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -438,7 +450,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added demo GIF, updated docs." />
     <MESSAGE value="Fixed error." />
     <MESSAGE value="Fixed error in README language." />
     <MESSAGE value="Setup mechanism for testing." />
@@ -463,7 +474,8 @@
     <MESSAGE value="Updated package.json to include metadata" />
     <MESSAGE value="Updated license to MIT, added unpkg field" />
     <MESSAGE value="Now prints fetch errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now prints fetch errors" />
+    <MESSAGE value="Updated packages&#10;&#10;- All packages were updated to the latest versions (package.json)&#10;- fetch() to XHR helper was renamed to legacyFetch in the global scope (index.js)&#10;- Tests were modified to work with legacyFetch arguments which were a bit different from normal fetch (read.js and append.js)&#10;- Small prettier config added&#10;- Removed stale Codacy badge from README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated packages&#10;&#10;- All packages were updated to the latest versions (package.json)&#10;- fetch() to XHR helper was renamed to legacyFetch in the global scope (index.js)&#10;- Tests were modified to work with legacyFetch arguments which were a bit different from normal fetch (read.js and append.js)&#10;- Small prettier config added&#10;- Removed stale Codacy badge from README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -40,6 +40,7 @@ function updateHTML() {
     }
 
     element.style.display = "none";
+    const hideEmpty = element.hasAttribute("data-stein-hide-empty");
 
     fetchData({ URL, search, limit, offset })
       .then(data => {
@@ -49,7 +50,7 @@ function updateHTML() {
           contentUnits.push(element.innerHTML);
         }
         const interpolatedUnits = contentUnits.map((contentUnit, index) => {
-          return interpolateString(contentUnit, data[index]);
+          return interpolateString(contentUnit, data[index], hideEmpty);
         });
 
         // Update the DOM
@@ -75,10 +76,11 @@ function fetchData({ URL, search, limit, offset }) {
   return legacyFetch(queryURL).then(response => JSON.parse(response.response));
 }
 
-function interpolateString(string, replacements) {
+function interpolateString(string, replacements, hideEmpty) {
   return string.replace(/{{([^{}]*)}}/g, (fullCapture, key) => {
     const replacement = replacements[key];
-    return typeof replacement === "string" ? replacement : fullCapture;
+    if (typeof replacement === "string") return replacement;
+    return hideEmpty ? "" : fullCapture;
   });
 }
 
