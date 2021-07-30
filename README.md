@@ -2,7 +2,7 @@
 
 # Stein Expedite
 
-[![Build Status](https://travis-ci.com/shivensinha4/Stein-Expedite.svg?token=x3fmHcesiyXMyg1SGYVm&branch=master)](https://travis-ci.com/shivensinha4/Stein-Expedite)
+[![Build Status](https://www.travis-ci.com/SteinHQ/Expedite.svg?branch=master)](https://www.travis-ci.com/SteinHQ/Expedite)
 
 Stein Expedite helps you
 
